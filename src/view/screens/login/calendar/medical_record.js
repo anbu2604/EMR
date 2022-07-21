@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Hospital } from "react-bootstrap-icons";
-const url = "http://localhost:3000/patient";
+
 
 function Medical_record() {
   return (
@@ -45,14 +45,10 @@ function Medical_record() {
                 <a className="m-link active" data-bs-toggle="collapse" data-bs-target="#menu-Patient" href="#">
                   <i className="icofont-blind fs-5" /> <span>Patient</span> <span className="arrow icofont-rounded-down ms-auto text-end fs-5" /></a>
                 {/* Menu: Sub menu ul */}
-                <ul className="sub-menu collapse" id="menu-Patient">
-                  <li><a className="ms-link" href="./patient-list">Patient List</a></li>
-                  <li><a className="ms-link" href={url}>Add Patient</a></li>
-                  {/* <li><Link to="/calender" > Contact us </Link> </li> */}
-
-                  <li><a className="ms-link" href="./patient_profile">Patient Profile</a></li>
+                <ul className="sub-menu collapse show" id="menu-Patient">
+                  <li><a className="ms-link" href="./patient_list">Patient List</a></li>
+                  <li><a className="ms-link" href="./patient_profile">Add Patient</a></li>
                   <li><a className="ms-link" href="patient-invoices.html">Patient Invoices</a></li>
-
                 </ul>
               </li>
               <li><a class="m-link" href="./cal"><i class="icofont-stretcher fs-5"></i> <span>Schedule</span></a></li>

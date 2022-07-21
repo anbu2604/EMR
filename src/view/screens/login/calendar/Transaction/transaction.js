@@ -1,7 +1,7 @@
 import ButtonGroup from "react-bootstrap/ButtonGroup";
 import Button from "react-bootstrap/Button";
 
-const url = "http://localhost:3000/patient";
+
 
 function Transaction() {
   return (

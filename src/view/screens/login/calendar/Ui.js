@@ -1,7 +1,7 @@
 import {React} from "react";
 import patient from "./patient";
 import { Link } from 'react-router-dom';
-const url = "http://localhost:3000/patient";
+
 function Ui() {
   return (
     
@@ -46,12 +46,8 @@ function Ui() {
                 {/* Menu: Sub menu ul */}
                 <ul className="sub-menu collapse" id="menu-Patient">
                   <li><a className="ms-link" href="./patient_list">Patient List</a></li>
-                  <li><a className="ms-link" href={url}>Add Patient</a></li>
-                  {/* <li><Link to="/calender" > Contact us </Link> </li> */}
-
-                  <li><a className="ms-link" href="./patient_profile">Patient Profile</a></li>
+                  <li><a className="ms-link" href="./patient_profile">Add Patient</a></li>
                   <li><a className="ms-link" href="patient-invoices.html">Patient Invoices</a></li>
-
                 </ul>
               </li>
               <li><a class="m-link" href="./cal"><i class="icofont-stretcher fs-5"></i> <span>Schedule</span></a></li>
