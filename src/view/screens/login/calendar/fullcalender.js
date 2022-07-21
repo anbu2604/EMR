@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import FullCalendar from "@fullcalendar/react"; // must go before plugins
 import dayGridPlugin from "@fullcalendar/daygrid"; // a plugin!
 import "../usr/usr.css";
-const url = "http://localhost:3000/patient";
+
 
 export class patient extends Component {
   render() {
