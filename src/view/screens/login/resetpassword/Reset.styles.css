@@ -1,0 +1,84 @@
+.logincontent{
+    background-color: rgb(243, 242, 243);
+}
+.wave {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 50%;
+    z-index: -1;
+    background-color: rgb(243, 242, 243);
+}
+
+.resetimg {
+    display: flex;
+    justify-content: center;
+    padding: 8rem ;
+}
+
+.resetimg img {
+    width: 600px;
+}
+
+
+.login-content {
+    text-align: center;
+}
+
+.resetuserimg {
+    height: 180px;
+}
+.title{
+    font-size: 2rem;
+   
+}
+
+.resetinput {
+    color: rgb(0, 0, 0);
+    padding: 15px 25px;
+    border: none;
+    border-bottom: solid 1px  rgb(203, 206, 203);
+    outline: none;
+    background-color: transparent;
+    
+}
+input.resetinput::placeholder {
+    color: rgb(53, 51, 51);
+    font-size: 16px;
+    font-weight: 550;
+}
+
+.reseticon {
+    border: none;
+    color: rgb(160, 158, 158);
+    /* border-bottom: solid 1px  rgb(203, 206, 203); */
+    /* padding: 5px 10px; */
+}
+
+.forgotbtn {
+    /* padding: 10px 20px ; */
+    height: 50px;
+    width: 150px !important;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: #0a83bb;
+    border: black solid 1px;
+    border-radius: 25px;
+}
+.forgotbtn:hover{
+    background-color: rgb(17, 224, 52);
+
+}
+.forgot{
+    text-decoration: none;
+    color: rgb(36, 35, 35);
+    font-size: 1.3rem;
+}
+.forgotlinkbtn {
+    text-decoration: none;
+    color: rgb(248, 245, 245);
+}
+.forgotlinkbtn:hover{
+    color: rgb(5, 4, 4);
+}
