@@ -52,7 +52,7 @@ function MainNavigator() {
         <Route path="/fl" element={<Fl />} />
         <Route path="/calendar" element={<Calendar />} />
         <Route path="/Access" element={<Access_privilege />} />
-        <Route path="/list" element={<Patient_list />} />
+        <Route path="/patient_list" element={<Patient_list />} />
         {/* Sign Up */}
         <Route path="/signup" element={<Signup />} />
 
