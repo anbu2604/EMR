@@ -57,6 +57,7 @@ function MainNavigator() {
         <Route path="/signup" element={<Signup />} />
 
         <Route path="/ui" element={<Ui />} />
+        <Route path="/Dashborad" element={<Ui />} />
         <Route path="/" element={<Log />} />
         {/* Forgot password */}
         <Route path="/forgot" element={<Forgot />} />
