@@ -325,10 +325,7 @@ function Ui() {
                           <tr>
                             <th>Patients</th>
                             <th>Adress</th>
-                            <th>Admited</th>
-                            <th>Discharge</th>
-                            <th>Progress</th>
-                            <th>Status</th>
+                            <th>Join Date</th>
                           </tr>
                         </thead>
                         <tbody>
@@ -336,121 +333,61 @@ function Ui() {
                             <td><img src="assets/images/xs/avatar3.jpg" className="avatar sm rounded-circle me-2" alt="profile-image" /><span>Molly </span></td>
                             <td>70 Bowman St. South Windsor, CT 06074</td>
                             <td>May 13, 2021</td>
-                            <td>May 16, 2021</td>
-                            <td>
-                              <div className="progress" style={{height: '3px'}}>
-                                <div className="progress-bar progress-bar-warning" role="progressbar" aria-valuenow={40} aria-valuemin={0} aria-valuemax={100} style={{width: '40%'}}> <span className="sr-only">40% Complete</span> </div>
-                              </div>
-                            </td>
-                            <td><span className="badge bg-info">Admit</span></td>
+                            
                           </tr>
                           <tr>
                             <td><img src="assets/images/xs/avatar1.jpg" className="avatar sm rounded-circle me-2" alt="profile-image" /><span>Brian</span></td>
                             <td>123 6th St. Melbourne, FL 32904</td>
                             <td>May 13, 2021</td>
-                            <td>May 22, 2021</td>
-                            <td>
-                              <div className="progress" style={{height: '3px'}}>
-                                <div className="progress-bar bg-success" role="progressbar" aria-valuenow={100} aria-valuemin={0} aria-valuemax={100} style={{width: '100%'}}> <span className="sr-only">100% Complete</span> </div>
-                              </div>
-                            </td>
-                            <td><span className="badge bg-success">Discharge</span></td>
+                            
                           </tr>
                           <tr>
                             <td><img src="assets/images/xs/avatar2.jpg" className="avatar sm rounded-circle me-2" alt="profile-image" /><span>Julia</span></td>
                             <td>4 Shirley Ave. West Chicago, IL 60185</td>
                             <td>May 17, 2021</td>
-                            <td>May 16, 2021</td>
-                            <td>
-                              <div className="progress" style={{height: '3px'}}>
-                                <div className="progress-bar bg-success" role="progressbar" aria-valuenow={100} aria-valuemin={0} aria-valuemax={100} style={{width: '100%'}}> <span className="sr-only">100% Complete</span> </div>
-                              </div>
-                            </td>
-                            <td><span className="badge bg-success">Discharge</span></td>
+                            
                           </tr>
                           <tr>
                             <td><img src="assets/images/xs/avatar4.jpg" className="avatar sm rounded-circle me-2" alt="profile-image" /><span>Sonia</span></td>
                             <td>123 6th St. Melbourne, FL 32904</td>
                             <td>May 13, 2021</td>
-                            <td>May 23, 2021</td>
-                            <td>
-                              <div className="progress" style={{height: '3px'}}>
-                                <div className="progress-bar bg-info" role="progressbar" aria-valuenow={15} aria-valuemin={0} aria-valuemax={100} style={{width: '15%'}}> <span className="sr-only">15% Complete</span> </div>
-                              </div>
-                            </td>
-                            <td><span className="badge bg-info">Admit</span></td>
+                            
                           </tr>
                           <tr>
                             <td><img src="assets/images/xs/avatar5.jpg" className="avatar sm rounded-circle me-2" alt="profile-image" /><span>Adam H</span></td>
                             <td>4 Shirley Ave. West Chicago, IL 60185</td>
                             <td>May 18, 2021</td>
-                            <td>May 18, 2021</td>
-                            <td>
-                              <div className="progress" style={{height: '3px'}}>
-                                <div className="progress-bar bg-danger" role="progressbar" aria-valuenow={85} aria-valuemin={0} aria-valuemax={100} style={{width: '85%'}}> <span className="sr-only">85% Complete</span> </div>
-                              </div>
-                            </td>
-                            <td><span className="badge bg-info">Admit</span></td>
+                            
                           </tr>
                           <tr>
                             <td><img src="assets/images/xs/avatar9.jpg" className="avatar sm rounded-circle me-2" alt="profile-image" /><span>Alexander</span></td>
                             <td>123 6th St. Melbourne, FL 32904</td>
                             <td>May 13, 2021</td>
-                            <td>May 22, 2021</td>
-                            <td>
-                              <div className="progress" style={{height: '3px'}}>
-                                <div className="progress-bar bg-success" role="progressbar" aria-valuenow={100} aria-valuemin={0} aria-valuemax={100} style={{width: '100%'}}> <span className="sr-only">100% Complete</span> </div>
-                              </div>
-                            </td>
-                            <td><span className="badge bg-success">Discharge</span></td>
+                           
                           </tr>
                           <tr>
                             <td><img src="assets/images/xs/avatar11.jpg" className="avatar sm rounded-circle me-2" alt="profile-image" /><span>Gabrielle</span></td>
                             <td>4 Shirley Ave. West Chicago, IL 60185</td>
                             <td>May 17, 2021</td>
-                            <td>May 16, 2021</td>
-                            <td>
-                              <div className="progress" style={{height: '3px'}}>
-                                <div className="progress-bar bg-success" role="progressbar" aria-valuenow={100} aria-valuemin={0} aria-valuemax={100} style={{width: '100%'}}> <span className="sr-only">100% Complete</span> </div>
-                              </div>
-                            </td>
-                            <td><span className="badge bg-success">Discharge</span></td>
+                            
                           </tr>
                           <tr>
                             <td><img src="assets/images/xs/avatar12.jpg" className="avatar sm rounded-circle me-2" alt="profile-image" /><span>Grace</span></td>
                             <td>4 Shirley Ave. West Chicago, IL 60185</td>
                             <td>May 17, 2021</td>
-                            <td>May 16, 2021</td>
-                            <td>
-                              <div className="progress" style={{height: '3px'}}>
-                                <div className="progress-bar bg-success" role="progressbar" aria-valuenow={100} aria-valuemin={0} aria-valuemax={100} style={{width: '100%'}}> <span className="sr-only">100% Complete</span> </div>
-                              </div>
-                            </td>
-                            <td><span className="badge bg-success">Discharge</span></td>
+                            
                           </tr>
                           <tr>
                             <td><img src="assets/images/xs/avatar8.jpg" className="avatar sm rounded-circle me-2" alt="profile-image" /><span>Ryan </span></td>
                             <td>70 Bowman St. South Windsor, CT 06074</td>
                             <td>May 13, 2021</td>
-                            <td>May 16, 2021</td>
-                            <td>
-                              <div className="progress" style={{height: '3px'}}>
-                                <div className="progress-bar progress-bar-warning" role="progressbar" aria-valuenow={40} aria-valuemin={0} aria-valuemax={100} style={{width: '40%'}}> <span className="sr-only">40% Complete</span> </div>
-                              </div>
-                            </td>
-                            <td><span className="badge bg-info">Admit</span></td>
+                           
                           </tr>
                           <tr>
                             <td><img src="assets/images/xs/avatar7.jpg" className="avatar sm rounded-circle me-2" alt="profile-image" /><span>Christian</span></td>
                             <td>123 6th St. Melbourne, FL 32904</td>
                             <td>May 13, 2021</td>
-                            <td>May 22, 2021</td>
-                            <td>
-                              <div className="progress" style={{height: '3px'}}>
-                                <div className="progress-bar bg-success" role="progressbar" aria-valuenow={100} aria-valuemin={0} aria-valuemax={100} style={{width: '100%'}}> <span className="sr-only">100% Complete</span> </div>
-                              </div>
-                            </td>
-                            <td><span className="badge bg-success">Discharge</span></td>
+                            
                           </tr>
                         </tbody>
                       </table>
