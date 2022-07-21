@@ -84,14 +84,9 @@ export class patient extends Component {
                       </a>
                     </li>
                     <li>
-                      <a className="ms-link" href={url}>
-                        Add Patient
-                      </a>
-                    </li>
-                    <li>
-                      <a className="ms-link" href="./patient_profile">
-                        Patient Profile
-                      </a>
+                    <a className="ms-link" href="./patient_profile">
+                      Add Patient
+                    </a>
                     </li>
                     <li>
                       <a className="ms-link" href="patient-invoices.html">
