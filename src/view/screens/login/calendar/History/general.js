@@ -78,13 +78,8 @@ function History() {
                     </a>
                   </li>
                   <li>
-                    <a className="ms-link" href={url}>
-                      Add Patient
-                    </a>
-                  </li>
-                  <li>
                     <a className="ms-link" href="./patient_profile">
-                      Patient Profile
+                      Add Patient
                     </a>
                   </li>
                   <li>
