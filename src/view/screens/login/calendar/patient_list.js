@@ -254,10 +254,7 @@ function Patient_list(){
                           <th>Patients</th>
                           <th>Age</th>
                           <th>Adress</th>
-                          <th>Admited</th>
-                          <th>Discharge</th>
-                          <th>Progress</th>
-                          <th>Status</th>
+                          <th>Join Date</th>
                         </tr>
                       </thead>
                       <tbody>
@@ -267,13 +264,7 @@ function Patient_list(){
                           <td>45</td>
                           <td>70 Bowman St. South Windsor, CT 06074</td>
                           <td>May 13, 2021</td>
-                          <td>May 16, 2021</td>
-                          <td>
-                            <div className="progress" style={{height: '3px'}}>
-                              <div className="progress-bar progress-bar-warning" role="progressbar" aria-valuenow={40} aria-valuemin={0} aria-valuemax={100} style={{width: '40%'}}> <span className="sr-only">40% Complete</span> </div>
-                            </div>
-                          </td>
-                          <td><span className="badge bg-info">Admit</span></td>
+                          
                         </tr>
                         <tr>
                           <td>PT-0011</td>
@@ -281,13 +272,7 @@ function Patient_list(){
                           <td>35</td>
                           <td>123 6th St. Melbourne, FL 32904</td>
                           <td>May 13, 2021</td>
-                          <td>May 22, 2021</td>
-                          <td>
-                            <div className="progress" style={{height: '3px'}}>
-                              <div className="progress-bar bg-success" role="progressbar" aria-valuenow={100} aria-valuemin={0} aria-valuemax={100} style={{width: '100%'}}> <span className="sr-only">100% Complete</span> </div>
-                            </div>
-                          </td>
-                          <td><span className="badge bg-success">Discharge</span></td>
+                          
                         </tr>
                         <tr>
                           <td>PT-0045</td>
@@ -295,13 +280,7 @@ function Patient_list(){
                           <td>42</td>
                           <td>4 Shirley Ave. West Chicago, IL 60185</td>
                           <td>May 17, 2021</td>
-                          <td>May 16, 2021</td>
-                          <td>
-                            <div className="progress" style={{height: '3px'}}>
-                              <div className="progress-bar bg-success" role="progressbar" aria-valuenow={100} aria-valuemin={0} aria-valuemax={100} style={{width: '100%'}}> <span className="sr-only">100% Complete</span> </div>
-                            </div>
-                          </td>
-                          <td><span className="badge bg-success">Discharge</span></td>
+                          
                         </tr>
                         <tr>
                           <td>PT-0030</td>
@@ -309,13 +288,7 @@ function Patient_list(){
                           <td>25</td>
                           <td>123 6th St. Melbourne, FL 32904</td>
                           <td>May 13, 2021</td>
-                          <td>May 23, 2021</td>
-                          <td>
-                            <div className="progress" style={{height: '3px'}}>
-                              <div className="progress-bar bg-info" role="progressbar" aria-valuenow={15} aria-valuemin={0} aria-valuemax={100} style={{width: '15%'}}> <span className="sr-only">15% Complete</span> </div>
-                            </div>
-                          </td>
-                          <td><span className="badge bg-info">Admit</span></td>
+                          
                         </tr>
                         <tr>
                           <td>PT-0078</td>
@@ -323,13 +296,7 @@ function Patient_list(){
                           <td>18</td>
                           <td>4 Shirley Ave. West Chicago, IL 60185</td>
                           <td>May 18, 2021</td>
-                          <td>May 18, 2021</td>
-                          <td>
-                            <div className="progress" style={{height: '3px'}}>
-                              <div className="progress-bar bg-danger" role="progressbar" aria-valuenow={85} aria-valuemin={0} aria-valuemax={100} style={{width: '85%'}}> <span className="sr-only">85% Complete</span> </div>
-                            </div>
-                          </td>
-                          <td><span className="badge bg-info">Admit</span></td>
+                          
                         </tr>
                         <tr>
                           <td>PT-0098</td>
@@ -337,13 +304,7 @@ function Patient_list(){
                           <td>38</td>
                           <td>123 6th St. Melbourne, FL 32904</td>
                           <td>May 13, 2021</td>
-                          <td>May 22, 2021</td>
-                          <td>
-                            <div className="progress" style={{height: '3px'}}>
-                              <div className="progress-bar bg-success" role="progressbar" aria-valuenow={100} aria-valuemin={0} aria-valuemax={100} style={{width: '100%'}}> <span className="sr-only">100% Complete</span> </div>
-                            </div>
-                          </td>
-                          <td><span className="badge bg-success">Discharge</span></td>
+                          
                         </tr>
                         <tr>
                           <td>PT-0999</td>
@@ -351,13 +312,7 @@ function Patient_list(){
                           <td>65</td>
                           <td>4 Shirley Ave. West Chicago, IL 60185</td>
                           <td>May 17, 2021</td>
-                          <td>May 16, 2021</td>
-                          <td>
-                            <div className="progress" style={{height: '3px'}}>
-                              <div className="progress-bar bg-success" role="progressbar" aria-valuenow={100} aria-valuemin={0} aria-valuemax={100} style={{width: '100%'}}> <span className="sr-only">100% Complete</span> </div>
-                            </div>
-                          </td>
-                          <td><span className="badge bg-success">Discharge</span></td>
+                          
                         </tr>
                         <tr>
                           <td>PT-0101</td>
@@ -365,13 +320,7 @@ function Patient_list(){
                           <td>40</td>
                           <td>4 Shirley Ave. West Chicago, IL 60185</td>
                           <td>May 17, 2021</td>
-                          <td>May 16, 2021</td>
-                          <td>
-                            <div className="progress" style={{height: '3px'}}>
-                              <div className="progress-bar bg-success" role="progressbar" aria-valuenow={100} aria-valuemin={0} aria-valuemax={100} style={{width: '100%'}}> <span className="sr-only">100% Complete</span> </div>
-                            </div>
-                          </td>
-                          <td><span className="badge bg-success">Discharge</span></td>
+                          
                         </tr>
                         <tr>
                           <td>PT-1001</td>
@@ -379,13 +328,7 @@ function Patient_list(){
                           <td>34</td>
                           <td>70 Bowman St. South Windsor, CT 06074</td>
                           <td>May 13, 2021</td>
-                          <td>May 16, 2021</td>
-                          <td>
-                            <div className="progress" style={{height: '3px'}}>
-                              <div className="progress-bar progress-bar-warning" role="progressbar" aria-valuenow={40} aria-valuemin={0} aria-valuemax={100} style={{width: '40%'}}> <span className="sr-only">40% Complete</span> </div>
-                            </div>
-                          </td>
-                          <td><span className="badge bg-info">Admit</span></td>
+                          
                         </tr>
                         <tr>
                           <td>PT-1101</td>
@@ -393,13 +336,7 @@ function Patient_list(){
                           <td>21</td>
                           <td>123 6th St. Melbourne, FL 32904</td>
                           <td>May 13, 2021</td>
-                          <td>May 22, 2021</td>
-                          <td>
-                            <div className="progress" style={{height: '3px'}}>
-                              <div className="progress-bar bg-success" role="progressbar" aria-valuenow={100} aria-valuemin={0} aria-valuemax={100} style={{width: '100%'}}> <span className="sr-only">100% Complete</span> </div>
-                            </div>
-                          </td>
-                          <td><span className="badge bg-success">Discharge</span></td>
+                          
                         </tr>
                       </tbody>
                     </table>
