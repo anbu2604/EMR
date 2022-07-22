@@ -226,7 +226,7 @@ function Other() {
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="./documents">
+                  <a class="nav-link" href="./eye_module">
                       Documents
                     </a>
                   </li>

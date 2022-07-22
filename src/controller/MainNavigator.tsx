@@ -20,7 +20,7 @@ import Permissions from '../view/screens/login/calendar/permissions';
 import Access_privilege from '../view/screens/login/calendar/access_privilege';
 import Role_Master from '../view/screens/login/calendar/role_master';
 import Add_role from '../view/screens/login/calendar/add_role';
-import Medical_report from '../view/screens/login/calendar/medical_record';
+import Medical_report from '../view/screens/login/calendar/medical_report';
 import History from '../view/screens/login/calendar/History/general';
 import Family_history from '../view/screens/login/calendar/History/family_history';
 import Relatives from '../view/screens/login/calendar/History/Relatives';
@@ -28,7 +28,9 @@ import Life_style from '../view/screens/login/calendar/History/life-style';
 import Other from '../view/screens/login/calendar/History/other';
 import Transaction from '../view/screens/login/calendar/Transaction/transaction';
 import Report from '../view/screens/login/calendar/Report/report';
-import Documents from '../view/screens/login/calendar/Documents/documents';
+import Eye_module from '../view/screens/login/calendar/Documents/Eye_module';
+import Lab_report from '../view/screens/login/calendar/Documents/Lab_report';
+import MedicalRecord from '../view/screens/login/calendar/Documents/Medical_record';
 function MainNavigator() {
   return (
     <div className="App">
@@ -42,7 +44,10 @@ function MainNavigator() {
         <Route path="/transaction" element={<Transaction />} />
         <Route path="/relatives" element={<Relatives />} />
         <Route path="/life_style" element={<Life_style />} />
-        <Route path="/documents" element={<Documents />} />
+        <Route path="/lab_report" element={<Lab_report />} />
+        <Route path="/eye_module" element={<Eye_module />} />
+        <Route path="/medical_record" element={<MedicalRecord />} />
+
         <Route path="/role_master" element={<Role_Master />} />
         <Route path="/Permissions" element={<Permissions />} />
         <Route path="/family_history" element={<Family_history />} />

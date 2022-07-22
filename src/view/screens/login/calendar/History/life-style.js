@@ -226,7 +226,7 @@ function Life_style() {
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">
+                  <a class="nav-link" href="./eye_module">
                       Documents
                     </a>
                   </li>
