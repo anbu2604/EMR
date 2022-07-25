@@ -1,6 +1,8 @@
+import React, { Component } from "react";
 
+const url = "http://localhost:3000/patient";
 
-function Relatives() {
+function Sidebar() {
   return (
     <div>
       <div id="ihealth-layout" className="theme-tradewind">
@@ -78,8 +80,13 @@ function Relatives() {
                     </a>
                   </li>
                   <li>
-                    <a className="ms-link" href="./patient_profile">
+                    <a className="ms-link" href={url}>
                       Add Patient
+                    </a>
+                  </li>
+                  <li>
+                    <a className="ms-link" href="./patient_profile">
+                      Patient Profile
                     </a>
                   </li>
                   <li>
@@ -100,7 +107,7 @@ function Relatives() {
                 </a>
               </li>
               <li>
-                <a class="m-link active" href="./access">
+                <a class="m-link active" href="./role_master">
                   <i class="icofont-user-alt-1"></i> <span>Role Master</span>
                 </a>
               </li>
@@ -119,194 +126,7 @@ function Relatives() {
         {/* main body area */}
         <div className="main px-lg-4 px-md-4">
           {/* Body: Header */}
-          <div className="header">
-            <nav className="navbar py-4">
-              <div className="container-xxl">
-                {/* header rightbar icon */}
-                <div className="h-right d-flex align-items-center mr-5 mr-lg-0 order-1">
-                  <div className="dropdown user-profile ml-2 ml-sm-3 d-flex align-items-center zindex-popover">
-                    <div className="u-info me-2">
-                      <p className="mb-0 text-end line-height-sm ">
-                        <span className="font-weight-bold">John Quinn</span>
-                      </p>
-                      <small>Admin Profile</small>
-                    </div>
-                    <a
-                      className="nav-link dropdown-toggle pulse p-0"
-                      href="#"
-                      role="button"
-                      data-bs-toggle="dropdown"
-                      data-bs-display="static"
-                    >
-                      <img
-                        className="avatar lg rounded-circle img-thumbnail"
-                        src="assets/images/profile_av.png"
-                        alt="profile"
-                      />
-                    </a>
-                    <div className="dropdown-menu rounded-lg shadow border-0 dropdown-animation dropdown-menu-end p-0 m-0">
-                      <div className="card border-0 w280">
-                        <div className="card-body pb-0">
-                          <div className="d-flex py-1">
-                            <img
-                              className="avatar rounded-circle"
-                              src="assets/images/profile_av.png"
-                              alt="profile"
-                            />
-                            <div className="flex-fill ms-3">
-                              <p className="mb-0">
-                                <span className="font-weight-bold">
-                                  John Quinn
-                                </span>
-                              </p>
-                              <small className>Johnquinn@gmail.com</small>
-                            </div>
-                          </div>
-                          <div>
-                            <hr className="dropdown-divider border-dark" />
-                          </div>
-                        </div>
-                        <div className="list-group m-2 ">
-                          <a
-                            href="/"
-                            className="list-group-item list-group-item-action border-0 "
-                          >
-                            <i className="icofont-logout fs-6 me-3" />
-                            Signout
-                          </a>
-                          <div>
-                            <hr className="dropdown-divider border-dark" />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                {/* menu toggler */}
-                <button
-                  className="navbar-toggler p-0 border-0 menu-toggle order-3"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#mainHeader"
-                >
-                  <span className="fa fa-bars" />
-                </button>
-                {/* main menu Search*/}
-                <div className="order-0 col-lg-4 col-md-4 col-sm-12 col-12 mb-3 mb-md-0 ">
-                  {/* <div className="input-group flex-nowrap input-group-lg">
-                    <input type="search" className="form-control" placeholder="Search" aria-label="search" aria-describedby="addon-wrapping" />
-                    <button type="button" className="input-group-text" id="addon-wrapping"><i className="fa fa-search" /></button>
-                  </div> */}
-                </div>
-              </div>
-            </nav>
-          </div>
-
-          <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a
-                      class="nav-link active"
-                      aria-current="page"
-                      href="./medical_report"
-                    >
-                      Dashboard
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./history">
-                      History
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./report">
-                      Report
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                  <a class="nav-link" href="./eye_module">
-                      Documents
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                  <a class="nav-link" href="./transaction">
-                      Transactions
-                    </a>
-                  </li>
-                
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">
-                      Ledger
-                    </a>
-                  </li>
-                
-                </ul>
-              </div>
-            </div>
-          </nav>
-
-          <div className="row col-12 p-2 ">
-            <div className="col-lg-6">
-            <button type="button" class="btn btn-info col-3">
-             
-              <i class="icofont-ui-edit m-1 p-1"></i>Edit
-            </button></div>
-            <div className="col-lg-6">
-<h4 className="col-4 float-end fw-bold">Relatives</h4>
-</div>
-          </div>
-
-          <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light bg-info">
-              <div class="container-fluid col-8">
-              <a class="navbar-brand" href="./history">
-                  General
-                </a>
-                <a class="navbar-brand" href="./family_history">
-                  Family History
-                </a>
-                <a class="navbar-brand" href="./relatives">
-                  Relatives
-                </a>
-                <a class="navbar-brand" href="./life_style">
-                  Lifestyle
-                </a>
-                <a class="navbar-brand" href="./other">
-                  Other
-                </a>
-              </div>
-            </nav>
-          </div>
-
-          <div className="container text-center">
-    <div className="row">
-        <label className="col-md-3 col-lg-6 col-sm-12 fw-bold mt-3">Cancer:	</label>
-        <label className="col-md-3 col-lg-6 col-sm-12 fw-bold mt-3">Tuberculosis:</label>
-
-    </div>
-    <div className="row">
-        <label className="col-md-3 col-lg-6 col-sm-12 fw-bold ">Diabetes:</label>
-        <label className="col-md-3 col-lg-6 col-sm-12 fw-bold ">High Blood Pressure:</label>
-
-    </div>
-    <div className="row">
-        <label className="col-md-3 col-lg-6 col-sm-12 fw-bold ">Heart Problems:</label>
-        <label className="col-md-3 col-lg-6 col-sm-12 fw-bold ">Stroke:</label>
-
-    </div>
-    <div className="row">
-        <label className="col-md-3 col-lg-6 col-sm-12 fw-bold ">Epilepsy:</label>
-        <label className="col-md-3 col-lg-6 col-sm-12 fw-bold ">Stroke:</label>
-
-    </div>
-    <div className="row">
-        <label className="col-md-3 col-lg-6 col-sm-12 fw-bold ">Suicide:</label>
-
-    </div>
-</div>
-
+          
 
           <div
             className="modal fade right"
@@ -590,7 +410,6 @@ function Relatives() {
                     Save Changes
                   </button>
                 </div>
-                
               </div>
             </div>
           </div>
@@ -600,4 +419,4 @@ function Relatives() {
   );
 }
 
-export default Relatives;
+export default Sidebar;
