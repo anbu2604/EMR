@@ -4,7 +4,6 @@ const url = "http://localhost:3000/patient";
 
 function Sidebar() {
   return (
-    <div>
       <div id="ihealth-layout" className="theme-tradewind">
         {/* sidebar */}
         <div className="sidebar px-4 py-4 py-md-5 me-0">
@@ -109,6 +108,11 @@ function Sidebar() {
               <li>
                 <a class="m-link active" href="./role_master">
                   <i class="icofont-user-alt-1"></i> <span>Role Master</span>
+                </a>
+              </li>
+              <li>
+                <a class="m-link active" href="./register">
+                  <i class="icofont-user-alt-1"></i> <span>Registration</span>
                 </a>
               </li>
             </ul>
@@ -415,7 +419,6 @@ function Sidebar() {
           </div>
         </div>
       </div>
-    </div>
   );
 }
 

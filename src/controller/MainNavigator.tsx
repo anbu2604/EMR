@@ -30,11 +30,13 @@ import Lab_report from "../view/screens/login/calendar/Documents/Lab_report";
 import MedicalRecord from "../view/screens/login/calendar/Documents/Medical_record";
 import Sidebar from '../view/components/sidebar';
 import Admin from "../view/components/admin";
+import Register from "../view/screens/login/calendar/register";
 function MainNavigator() {
   return (
     <div className="App">
       <Routes>
         {/* Login */}
+        <Route path="/register" element={<Register />} />
         <Route path="/cal" element={<Cal />} />
         <Route path="/usr" element={<Usr />} />
         <Route path="/history" element={<History />} />
