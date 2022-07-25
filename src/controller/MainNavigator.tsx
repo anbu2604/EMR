@@ -60,7 +60,7 @@ function MainNavigator() {
         {/* Sign Up */}
         <Route path="/signup" element={<Signup />} />
         <Route path="/ui" element={<Ui />} />
-        <Route path="/Dashborad" element={<Ui />} />
+        <Route path="/dashboard" element={<Ui />} />
         <Route path="/" element={<Log />} />
       
         {/* User */}
