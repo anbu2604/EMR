@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import patient from "./patient";
 
 export class cal extends Component {
   render() {

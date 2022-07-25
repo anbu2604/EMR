@@ -1,6 +1,6 @@
 import React from "react";
 
-
+import Sidebar from "../../../../components/sidebar";
 function Patient_list(){
     return(
         <div>

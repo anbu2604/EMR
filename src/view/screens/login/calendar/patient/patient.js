@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
-import Admin from '../../../components/admin';
-import Sidebar from '../../../components/sidebar';
-
+import Sidebar from '../../../../components/sidebar';
+import Admin from '../../../../components/admin';
 export class patient extends Component {
   render() {
     return (
@@ -11,7 +10,7 @@ export class patient extends Component {
       </div>
       <div className='col-lg-9'>
          <Admin></Admin>
-      <div className="col-lg-10"> 
+      <div className="col-lg-11"> 
 
 
         

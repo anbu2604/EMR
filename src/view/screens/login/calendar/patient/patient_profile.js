@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import Admin from "components/admin";
-import Sidebar from "../../../components/sidebar";
+import Sidebar from "../../../../components/sidebar";
+import Admin from "../../../../components/admin";
 import "./patient_profile.css";
 
 

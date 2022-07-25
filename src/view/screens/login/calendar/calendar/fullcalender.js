@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import FullCalendar from "@fullcalendar/react"; // must go before plugins
 import dayGridPlugin from "@fullcalendar/daygrid"; // a plugin!
-import "../usr/usr.css";
 
 
 export class patient extends Component {
