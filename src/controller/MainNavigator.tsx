@@ -5,7 +5,6 @@ import Forgot from '../view/screens/login/forgotpassword/Forgot';
 import Reset from '../view/screens/login/resetpassword/Reset';
 import Signup from '../view/screens/login/signup/Signup';
 import '../utils/css/App.css';
-import { Dashboard } from '../view/screens/dashboard/Dashboard';
 import  App  from '../view/screens/api';
 import Ui from '../view/screens/login/calendar/Ui'
 import Patient from '../view/screens/login/calendar/patient';
@@ -62,7 +61,7 @@ function MainNavigator() {
         <Route path="/signup" element={<Signup />} />
 
         <Route path="/ui" element={<Ui />} />
-        <Route path="/Dashborad" element={<Ui />} />
+        <Route path="/dashboard" element={<Ui />} />
         <Route path="/" element={<Log />} />
         {/* Forgot password */}
         <Route path="/forgot" element={<Forgot />} />
@@ -75,10 +74,6 @@ function MainNavigator() {
       
         <Route path="/patient" element={<Patient />} />
 
-       
-
-        {/* dashboard */}
-        <Route path="/dashboard" element={<Dashboard />} />
 
         {/* Masters */}
         <Route path="api" element={<App />} />

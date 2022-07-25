@@ -10,7 +10,7 @@ export class patient extends Component {
           {/* sidebar */}
           <div className="sidebar px-4 py-4 py-md-5 me-0">
             <div className="d-flex flex-column h-100">
-            <a href="./Dashborad" className="mb-0 brand-icon">
+            <a href="./dashboard" className="mb-0 brand-icon">
               <span className="logo-icon">
                 <i className="icofont-heart-beat fs-2" />
               </span>
@@ -18,7 +18,7 @@ export class patient extends Component {
             </a>
             {/* Menu: main ul */}
             <ul className="menu-list flex-grow-1 mt-3">
-            <li><a class="m-link" href="./Dashborad"><i class="icofont-ui-home fs-5"></i> <span>Dashboard</span></a></li>
+            <li><a class="m-link" href="./dashboard"><i class="icofont-ui-home fs-5"></i> <span>Dashboard</span></a></li>
               <li>
                 <a class="m-link " href="./role_master">
                 <i class="icofont-user-alt-1"></i> <span>Role Master</span>
