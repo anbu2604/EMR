@@ -1,10 +1,7 @@
 import React from 'react';
 import { Routes, Route } from "react-router-dom";
-import Login from '../view/screens/login/Login';
-import Forgot from '../view/screens/login/forgotpassword/Forgot';
-import Reset from '../view/screens/login/resetpassword/Reset';
+
 import '../utils/css/App.css';
-import  App  from '../view/screens/api';
 import Ui from '../view/screens/login/calendar/Ui'
 import Patient from '../view/screens/login/calendar/patient/patient';
 import Cal from '../view/screens/login/calendar/calendar/cal'
@@ -18,7 +15,7 @@ import Permissions from '../view/screens/login/calendar/access_privilege/permiss
 import Access_privilege from '../view/screens/login/calendar/access_privilege/access_privilege';
 import Role_Master from '../view/screens/login/calendar/role_master/role_master';
 import Add_role from '../view/screens/login/calendar/role_master/add_role';
-import Medical_report from '../view/screens/login/calendar/medical_record';
+import Medical_report from '../view/screens/login/calendar/medical_record/medical_record';
 import History from '../view/screens/login/calendar/History/general';
 import Family_history from '../view/screens/login/calendar/History/family_history';
 import Relatives from '../view/screens/login/calendar/History/Relatives';
@@ -26,6 +23,7 @@ import Life_style from '../view/screens/login/calendar/History/life-style';
 import Other from '../view/screens/login/calendar/History/other';
 import Transaction from '../view/screens/login/calendar/Transaction/transaction';
 import Report from '../view/screens/login/calendar/Report/report';
+import Medical_form from '../view/screens/login/calendar/medical_record/message_form';
 function MainNavigator() {
   return (
     <div className="App">
@@ -46,29 +44,17 @@ function MainNavigator() {
         <Route path="/Patient_profile" element={<Patient_profile />} />
         <Route path="/medical_report" element={<Medical_report />} />
         <Route path="/fl" element={<Fl />} />
+        <Route path="/message_form" element={<Medical_form />} />
         <Route path="/calendar" element={<Calendar />} />
         <Route path="/Access" element={<Access_privilege />} />
         <Route path="/patient_list" element={<Patient_list />} />
         <Route path="/ui" element={<Ui />} />
         <Route path="/Dashborad" element={<Ui />} />
         <Route path="/" element={<Log />} />
-        {/* Forgot password */}
-        <Route path="/forgot" element={<Forgot />} />
-
-        {/* Reset password */}
-        <Route path="/reset" element={<Reset />} />
-
-        {/* User */}
-
-      
+          
         <Route path="/patient" element={<Patient />} />
 
-       
-
-        {/* dashboard */}
-
-        {/* Masters */}
-        <Route path="api" element={<App />} />
+            
       </Routes>
     </div>
   );
