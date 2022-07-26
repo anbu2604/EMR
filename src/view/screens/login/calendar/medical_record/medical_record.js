@@ -1021,6 +1021,9 @@ function Medical_record() {
                     data-bs-parent="#accordionExample"
                   >
                     <div class="accordion-body">
+                    <div className="row float-end"><a href="./patient_reminder">
+                      <i class="icofont-ui-edit " ></i></a>
+                      </div>
                       <div className="row">
                         <label>No active patient reminders.</label>
                       </div>
@@ -1047,6 +1050,9 @@ function Medical_record() {
                     data-bs-parent="#accordionExample"
                   >
                     <div class="accordion-body">
+                    <div className="row float-end"><a href="./message_form">
+                      <i class="icofont-ui-edit " ></i></a>
+                      </div>
                       <div className="row">
                         <table class="table">
                           <thead>

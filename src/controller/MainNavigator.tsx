@@ -23,7 +23,10 @@ import Life_style from '../view/screens/login/calendar/History/life-style';
 import Other from '../view/screens/login/calendar/History/other';
 import Transaction from '../view/screens/login/calendar/Transaction/transaction';
 import Report from '../view/screens/login/calendar/Report/report';
-import Medical_form from '../view/screens/login/calendar/medical_record/message_form';
+import Medical_form from '../view/screens/login/calendar/medical_record/form/message_form';
+import Patient_reminder from '../view/screens/login/calendar/medical_record/form/patient_reminder';
+import Rules from '../view/screens/login/calendar/medical_record/form/rules';
+import Disclosuer from '../view/screens/login/calendar/medical_record/form/disclosuer';
 function MainNavigator() {
   return (
     <div className="App">
@@ -31,9 +34,12 @@ function MainNavigator() {
         {/* Login */}
         <Route path="/cal" element={<Cal />} />
         <Route path="/usr" element={<Usr />} />
+        <Route path="/Patient_reminder" element={<Patient_reminder />} />
         <Route path="/history" element={<History />} />
         <Route path="/other" element={<Other />} />
         <Route path="/report" element={<Report />} />
+        <Route path="/disclosuer" element={<Disclosuer />} />
+        <Route path="/rules" element={<Rules />} />
         <Route path="/transaction" element={<Transaction />} />
         <Route path="/relatives" element={<Relatives />} />
         <Route path="/life_style" element={<Life_style />} />
