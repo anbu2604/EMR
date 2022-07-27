@@ -13,7 +13,7 @@ const rules = () => {
           <nav class="navbar navbar-expand-lg navbar-light bg-info col-lg-9">
             <div class="container-md ">
               <a class="navbar-brand col-lg-1" href="./patient_reminder">
-                Main
+                Main--
               </a>
               <a class="navbar-brand col-lg-12" href="./rules">
                 Rules
