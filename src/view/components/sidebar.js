@@ -6,7 +6,7 @@ const url = "http://localhost:3000/patient";
 
 function Sidebar() {
   return (
-    <div>
+    <div >
       <div id="ihealth-layout" className="theme-tradewind vh-100 position-fixed">
         {/* sidebar */}
         <div className="sidebar px-4 py-4 py-md-5 me-0">
