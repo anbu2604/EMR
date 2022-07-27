@@ -22,42 +22,67 @@ const rules = () => {
           </nav>
           <div className="row">
             <div class="card col-lg-5">
-              <div class="card-body fw-bold px-5">Rule	</div>
+              <div class="card-body fw-bold px-5 m-4 text-center">Rule </div>
               <hr></hr>
-              <div class="card-body">Adult Weight Screening and Follow-Up	.</div>
+              <div class="card-body">
+                Adult Weight Screening and Follow-Up .
+              </div>
               <hr></hr>
               <div class="card-body">Measure Blood Pressure.</div>
               <hr></hr>
-              <div class="card-body">Cancer Screening: Colon Cancer Screening	.</div>
+              
             </div>
-            <div class="card col-lg-5">
-              <div class="card-body fw-bold">Patient Reminder</div>
+            <div class="card col-lg-5 ">
+              <div class="card-body fw-bold p-1">Patient Reminder</div>
               <hr></hr>
-              <div className="row">
-              <div class="card col-lg-5">
-              <div class="card-body fw-bold  ">Patient Setting	</div>
+              <div className="row ">
+                <div class="card col-lg-5 ">
+                  <div class="card-body fw-bold  ">Patient Setting </div>
+                </div>
+                <div class="card col-lg-7 p-1">
+                  <div class="card-body fw-bold ">Practice Default Setting</div>
+                </div>
               </div>
-              <div class="card col-lg-7">
-              <div class="card-body fw-bold ">Practice Default Setting</div>
-              </div></div>
-              <div class="card-body"> <div className="col-lg-5 col-md-3 col-sm-12">
-                          <select
-                            className="form-select col-lg-4"
-                            aria-label="Default select example"
-                          >
-                            <option selected>Default</option>
-                            <option value={1}>On</option>
-                            <option value={2}>Off</option>
-                            
-                            
-                          </select>
-                        </div>
-                        </div>
+              <div class="card-body">
+                {" "}
+                <div className="row">
+                <div className="col-lg-5 col-md-3 col-sm-12">
+                  <select
+                    className="form-select col-lg-4"
+                    aria-label="Default select example"
+                  >
+                    <option selected>Default</option>
+                    <option value={1}>On</option>
+                    <option value={2}>Off</option>
+                  </select>
+                </div>
+                <div className="col-lg-5 col-md-3 col-sm-12 text-center">
+                <label className="col-lg-2 col-md-3 col-sm-12">Off</label>
+                </div>
+                
+               </div>
+              </div>
               <hr></hr>
-              <div class="card-body">This is some text within a card body.</div>
-              <hr></hr>
-              <div class="card-body">This is some text within a card body.</div>
-            </div>
+              <div class="card-body">
+                {" "}
+                <div className="row">
+                <div className="col-lg-5 col-md-3 col-sm-12">
+                  <select
+                    className="form-select col-lg-4"
+                    aria-label="Default select example"
+                  >
+                    <option selected>Default</option>
+                    <option value={1}>On</option>
+                    <option value={2}>Off</option>
+                  </select>
+                </div>
+                <div className="col-lg-5 col-md-3 col-sm-12 text-center">
+                <label className="col-lg-2 col-md-3 col-sm-12">Off</label>
+                </div>
+                
+               </div>
+              </div>
+              <hr></hr>    </div>
           </div>
         </div>
       </div>
