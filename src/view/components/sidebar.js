@@ -1,10 +1,13 @@
 import React, { Component } from "react";
+import Admin from "../../../components/admin";
+import Sidebar from "../../../components/sidebar";
 
 const url = "http://localhost:3000/patient";
 
 function Sidebar() {
   return (
-      <div id="ihealth-layout" className="theme-tradewind">
+    <div>
+      <div id="ihealth-layout" className="theme-tradewind vh-100 position-fixed">
         {/* sidebar */}
         <div className="sidebar px-4 py-4 py-md-5 me-0">
           <div className="d-flex flex-column h-100">
@@ -417,9 +420,15 @@ function Sidebar() {
               </div>
             </div>
           </div>
+<div className="col-lg-2">
+  <Admin></Admin>
+</div>
+          {/* Modal Custom Settings*/}
+             </div>
+
         </div>
       </div>
-  );
+  )
 }
 
 export default Sidebar;

@@ -94,9 +94,17 @@ export class patient extends Component {
 
                         <div class="form-group col-lg-2 col-md-3 col-sm-12">
                           <input
+                            type="date"
+                            class="form-control"
+                            id="formGroupExampleInput2"
+                          />
+                        </div>
+                        <div class="form-group col-lg-2 col-md-3 col-sm-12">
+                          <input
                             type="number"
                             class="form-control"
                             id="formGroupExampleInput2"
+                            placeholder="Age"
                           />
                         </div>
 
@@ -730,12 +738,43 @@ export class patient extends Component {
                             <option value={2}>""</option>
                           </select>
                         </div>
+                        <label className="col-md-3 col-lg-2 col-sm-12">
+                        Religion:
+                        </label>
+                        <div className="col-lg-2 col-md-3 col-sm-12 ">
+                          <select
+                            className="form-select col-lg-4"
+                            aria-label="Default select example"
+                          >
+                            <option selected>Select</option>
+                            <option value={1}>""</option>
+                            <option value={2}>""</option>
+                            <option value={2}>""</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div className="row">
+                      
+                        <label className="col-md-3 col-lg-2 col-sm-12">
+                       Non- Religion:
+                        </label>
+                        <div className="col-lg-2 col-md-3 col-sm-12 ">
+                          <select
+                            className="form-select col-lg-4"
+                            aria-label="Default select example"
+                          >
+                            <option selected>Select</option>
+                            <option value={1}>""</option>
+                            <option value={2}>""</option>
+                            <option value={2}>""</option>
+                          </select>
+                        </div>
                        
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="accordion-item">
+                {/* <div class="accordion-item">
                   <h2 class="accordion-header" id="headingFive">
                     <button
                       class="accordion-button collapsed"
@@ -891,7 +930,7 @@ export class patient extends Component {
                         </div>
                         </div>
                         </div>
-                        </div>
+                        </div> */}
                         {/* <div class="accordion-item">
                   <h2 class="accordion-header" id="headingSeven">
                     <button
@@ -1101,10 +1140,7 @@ export class patient extends Component {
 
             {/* Modal Custom Settings*/}
            </div>
-           <div className="col-lg-2">
-             <Admin></Admin>
            </div>
-      </div>
     );
   }
 }
