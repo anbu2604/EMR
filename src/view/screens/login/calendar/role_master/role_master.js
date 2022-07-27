@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import Admin from "../../../components/admin";
-import Sidebar from "../../../components/sidebar";
+import Sidebar from "../../../../components/sidebar";
+import Admin from "../../../../components/admin";
 
 function Role_Master() {
   return (
@@ -8,7 +8,9 @@ function Role_Master() {
       <div className="col-lg-3">
         <Sidebar></Sidebar>
       </div>
-      <div className="col-lg-7">
+      <div className="col-lg-9">
+           <Admin></Admin>
+      <div className="col-lg-12">
      
           {/* Body: Body */}
 
@@ -161,8 +163,7 @@ function Role_Master() {
 
           {/* Modal Custom Settings*/}
          </div>
-         <div className="col-lg-2">
-           <Admin></Admin>
+        
          </div>
     </div>
   );
