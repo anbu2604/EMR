@@ -1,7 +1,12 @@
 import React, { Component } from "react";
 import { Hospital } from "react-bootstrap-icons";
+<<<<<<<< HEAD:src/view/screens/login/calendar/medical_report.js
 import Admin from "../../../components/admin";
 import Sidebar from "../../../components/sidebar";
+========
+import Sidebar from "../../../../components/sidebar";
+import Admin from "../../../../components/admin";
+>>>>>>>> 1557c758565fc7d815d237b173028532ab39d082:src/view/screens/login/calendar/medical_record/medical_record.js
 
 function Medical_record() {
   return (
@@ -11,7 +16,13 @@ function Medical_record() {
   <div className="col-lg-3">
     <Sidebar></Sidebar>
   </div>
+<<<<<<<< HEAD:src/view/screens/login/calendar/medical_report.js
   <div className="col-lg-7">
+========
+  <div className="col-lg-9">
+    <Admin></Admin>
+  <div className="col-lg-12">
+>>>>>>>> 1557c758565fc7d815d237b173028532ab39d082:src/view/screens/login/calendar/medical_record/medical_record.js
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
               <div class="collapse navbar-collapse" id="navbarNav">
@@ -987,6 +998,9 @@ function Medical_record() {
                     data-bs-parent="#accordionExample"
                   >
                     <div class="accordion-body">
+                      <div className="row float-end"><a href="./message_form">
+                      <i class="icofont-ui-edit " ></i></a>
+                      </div>
                       <div className="row">
                         <label>
                           There are no messages on file for this patient. To add
@@ -1775,8 +1789,12 @@ function Medical_record() {
           </div>
       
    </div>
+<<<<<<<< HEAD:src/view/screens/login/calendar/medical_report.js
   <div className="col-lg-2">
     <Admin></Admin>
+========
+  
+>>>>>>>> 1557c758565fc7d815d237b173028532ab39d082:src/view/screens/login/calendar/medical_record/medical_record.js
   </div>
 </div>
 

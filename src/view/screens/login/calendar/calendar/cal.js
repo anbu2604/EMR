@@ -1,10 +1,9 @@
-import React from "react";
+import React, { Component } from 'react';
 
-
-function Patient_list(){
-    return(
-        <div>
-  <div id="ihealth-layout" className="theme-tradewind">
+export class cal extends Component {
+  render() {
+    return (
+        <div id="ihealth-layout" className="theme-tradewind">
         {/* sidebar */}
         <div className="sidebar px-4 py-4 py-md-5 me-0">
           <div className="d-flex flex-column h-100">
@@ -41,16 +40,16 @@ function Patient_list(){
                 </ul>
               </li>
               <li className="collapsed">
-                <a className="m-link active" data-bs-toggle="collapse" data-bs-target="#menu-Patient" href="#">
+                <a className="m-link" data-bs-toggle="collapse" data-bs-target="#menu-Patient" href="#">
                   <i className="icofont-blind fs-5" /> <span>Patient</span> <span className="arrow icofont-rounded-down ms-auto text-end fs-5" /></a>
                 {/* Menu: Sub menu ul */}
-                <ul className="sub-menu collapse show" id="menu-Patient">
+                <ul className="sub-menu collapse" id="menu-Patient">
                   <li><a className="ms-link" href="./patient_list">Patient List</a></li>
                   <li><a className="ms-link" href="./patient_profile">Add Patient</a></li>
                   <li><a className="ms-link" href="patient-invoices.html">Patient Invoices</a></li>
                 </ul>
               </li>
-              <li><a class="m-link" href="./cal"><i class="icofont-stretcher fs-5"></i> <span>Schedule</span></a></li>
+              <li><a class="m-link active" href="./cal"><i class="icofont-stretcher fs-5"></i> <span>Schedule</span></a></li>
               
               {/* <li><a className="m-link" href="accidents.html"><i className="icofont-stretcher fs-5" /> <span>Accidents</span></a></li>
               <li><a className="m-link" href="labs.html"><i className="icofont-blood-test fs-5" /> <span>Labs</span></a></li>
@@ -100,88 +99,7 @@ function Patient_list(){
               <div className="container-xxl">
                 {/* header rightbar icon */}
                 <div className="h-right d-flex align-items-center mr-5 mr-lg-0 order-1">
-                  <div className="d-flex">
-                    <a className="nav-link text-primary collapsed" href="help.html" title="Get Help">
-                      <i className="icofont-info-square fs-5" />
-                    </a>
-                  </div>
-                  <div className="dropdown notifications zindex-popover">
-                    <a className="nav-link dropdown-toggle pulse" href="#" role="button" data-bs-toggle="dropdown">
-                      <i className="icofont-alarm fs-5" />
-                      <span className="pulse-ring" />
-                    </a>
-                    <div id="NotificationsDiv" className="dropdown-menu rounded-lg shadow border-0 dropdown-animation dropdown-menu-sm-end p-0 m-0">
-                      <div className="card border-0 w380">
-                        <div className="card-header border-0 p-3">
-                          <h5 className="mb-0 font-weight-light d-flex justify-content-between">
-                            <span>Notifications</span>
-                            <span className="badge text-white">06</span>
-                          </h5>
-                        </div>
-                        <div className="tab-content card-body">
-                          <div className="tab-pane fade show active">
-                            <ul className="list-unstyled list mb-0">
-                              <li className="py-2 mb-1 border-bottom">
-                                <a href="javascript:void(0);" className="d-flex">
-                                  <img className="avatar rounded-circle" src="assets/images/xs/avatar1.jpg" alt="" />
-                                  <div className="flex-fill ms-2">
-                                    <p className="d-flex justify-content-between mb-0 "><span className="font-weight-bold">Chloe Walkerr</span> <small>2MIN</small></p>
-                                    <span className>Added Appointment 2021-06-19 <span className="badge bg-success">Book</span></span>
-                                  </div>
-                                </a>
-                              </li>
-                              <li className="py-2 mb-1 border-bottom">
-                                <a href="javascript:void(0);" className="d-flex">
-                                  <div className="avatar rounded-circle no-thumbnail">AH</div>
-                                  <div className="flex-fill ms-2">
-                                    <p className="d-flex justify-content-between mb-0 "><span className="font-weight-bold">Alan	Hill</span> <small>13MIN</small></p>
-                                    <span className>Lab sample collection</span>
-                                  </div>
-                                </a>
-                              </li>
-                              <li className="py-2 mb-1 border-bottom">
-                                <a href="javascript:void(0);" className="d-flex">
-                                  <img className="avatar rounded-circle" src="assets/images/xs/avatar3.jpg" alt="" />
-                                  <div className="flex-fill ms-2">
-                                    <p className="d-flex justify-content-between mb-0 "><span className="font-weight-bold">Melanie	Oliver</span> <small>1HR</small></p>
-                                    <span className>Invoice Create Patient Room A-803</span>
-                                  </div>
-                                </a>
-                              </li>
-                              <li className="py-2 mb-1 border-bottom">
-                                <a href="javascript:void(0);" className="d-flex">
-                                  <img className="avatar rounded-circle" src="assets/images/xs/avatar5.jpg" alt="" />
-                                  <div className="flex-fill ms-2">
-                                    <p className="d-flex justify-content-between mb-0 "><span className="font-weight-bold">Boris Hart</span> <small>13MIN</small></p>
-                                    <span className>Medicine Order to Medical</span>
-                                  </div>
-                                </a>
-                              </li>
-                              <li className="py-2 mb-1 border-bottom">
-                                <a href="javascript:void(0);" className="d-flex">
-                                  <img className="avatar rounded-circle" src="assets/images/xs/avatar6.jpg" alt="" />
-                                  <div className="flex-fill ms-2">
-                                    <p className="d-flex justify-content-between mb-0 "><span className="font-weight-bold">Alan	Lambert</span> <small>1HR</small></p>
-                                    <span className>Leave Apply</span>
-                                  </div>
-                                </a>
-                              </li>
-                              <li className="py-2">
-                                <a href="javascript:void(0);" className="d-flex">
-                                  <img className="avatar rounded-circle" src="assets/images/xs/avatar7.jpg" alt="" />
-                                  <div className="flex-fill ms-2">
-                                    <p className="d-flex justify-content-between mb-0 "><span className="font-weight-bold">Zoe Wright</span> <small className>1DAY</small></p>
-                                    <span className>Patient Food Order Room A-809</span>
-                                  </div>
-                                </a>
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                        <a className="card-footer text-center border-top-0" href="#"> View all notifications</a>
-                      </div>
-                    </div>
-                  </div>
+      
                   <div className="dropdown user-profile ml-2 ml-sm-3 d-flex align-items-center zindex-popover">
                     <div className="u-info me-2">
                       <p className="mb-0 text-end line-height-sm "><span className="font-weight-bold">John Quinn</span></p>
@@ -203,18 +121,15 @@ function Patient_list(){
                           <div><hr className="dropdown-divider border-dark" /></div>
                         </div>
                         <div className="list-group m-2 ">
-                          <a href="virtual.html" className="list-group-item list-group-item-action border-0 "><i className="icofont-ui-video-chat fs-5 me-3" />I-Health Virtual</a>
-                          <a href="patient-invoices.html" className="list-group-item list-group-item-action border-0 "><i className="icofont-dollar fs-5 me-3" />Patient Invoices</a>
-                          <a href="ui-elements/auth-signin.html" className="list-group-item list-group-item-action border-0 "><i className="icofont-logout fs-6 me-3" />Signout</a>
+                          
+                          <a href="/" className="list-group-item list-group-item-action border-0 "><i className="icofont-logout fs-6 me-3" />Signout</a>
                           <div><hr className="dropdown-divider border-dark" /></div>
-                          <a href="ui-elements/auth-signup.html" className="list-group-item list-group-item-action border-0 "><i className="icofont-contact-add fs-5 me-3" />Add personal account</a>
+                         
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div className="setting ms-2">
-                    <a href="#" data-bs-toggle="modal" data-bs-target="#Settingmodal"><i className="icofont-gear-alt fs-5" /></a>
-                  </div>
+                  
                 </div>
                 {/* menu toggler */}
                 <button className="navbar-toggler p-0 border-0 menu-toggle order-3" type="button" data-bs-toggle="collapse" data-bs-target="#mainHeader">
@@ -222,123 +137,111 @@ function Patient_list(){
                 </button>
                 {/* main menu Search*/}
                 <div className="order-0 col-lg-4 col-md-4 col-sm-12 col-12 mb-3 mb-md-0 ">
-                  <div className="input-group flex-nowrap input-group-lg">
+                  {/* <div className="input-group flex-nowrap input-group-lg">
                     <input type="search" className="form-control" placeholder="Search" aria-label="search" aria-describedby="addon-wrapping" />
                     <button type="button" className="input-group-text" id="addon-wrapping"><i className="fa fa-search" /></button>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </nav>
           </div>
-          {/* Body: Body */}
-          <div className="body d-flex py-3">
+          {/* Body: Body */}       
+          <div className="body d-flex py-lg-3 py-md-2">
             <div className="container-xxl">
               <div className="row align-items-center">
                 <div className="border-0 mb-4">
                   <div className="card-header py-3 no-bg bg-transparent d-flex align-items-center px-0 justify-content-between border-bottom flex-wrap">
-                    <h3 className="fw-bold mb-0">Patient List</h3>
+                    <h3 className="fw-bold mb-0">Doctor Schedule</h3>
+                    <div className="col-auto d-flex w-sm-100">
+                      <button type="button" className="btn btn-primary btn-set-task w-sm-100" data-bs-toggle="modal" data-bs-target="#depadd"><i className="icofont-plus-circle me-2 fs-6" />Add Schedule</button>
+                    </div>
                   </div>
                 </div>
               </div> {/* Row end  */}
-              <div className="row mb-3">
-                <div className="card">
-                  <div className="card-body">
-                    <table id="patient-table" className="table table-hover align-middle mb-0" style={{width: '100%'}}>
-                      <thead>
-                        <tr>
-                          <th>Id</th>
-                          <th>Patients</th>
-                          <th>Age</th>
-                          <th>Adress</th>
-                          <th>Join Date</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>PT-0001</td>
-                          <td><img src="assets/images/xs/avatar3.jpg" className="avatar  rounded-circle me-2" alt="profile-image" /><span><a href="./medical_report">Molly </a></span></td>
-                          <td>45</td>
-                          <td>70 Bowman St. South Windsor, CT 06074</td>
-                          <td>May 13, 2021</td>
-                          
-                        </tr>
-                        <tr>
-                          <td>PT-0011</td>
-                          <td><img src="assets/images/xs/avatar1.jpg" className="avatar  rounded-circle me-2" alt="profile-image" /><span>Brian</span></td>
-                          <td>35</td>
-                          <td>123 6th St. Melbourne, FL 32904</td>
-                          <td>May 13, 2021</td>
-                          
-                        </tr>
-                        <tr>
-                          <td>PT-0045</td>
-                          <td><img src="assets/images/xs/avatar2.jpg" className="avatar  rounded-circle me-2" alt="profile-image" /><span>Julia</span></td>
-                          <td>42</td>
-                          <td>4 Shirley Ave. West Chicago, IL 60185</td>
-                          <td>May 17, 2021</td>
-                          
-                        </tr>
-                        <tr>
-                          <td>PT-0030</td>
-                          <td><img src="assets/images/xs/avatar4.jpg" className="avatar  rounded-circle me-2" alt="profile-image" /><span>Sonia</span></td>
-                          <td>25</td>
-                          <td>123 6th St. Melbourne, FL 32904</td>
-                          <td>May 13, 2021</td>
-                          
-                        </tr>
-                        <tr>
-                          <td>PT-0078</td>
-                          <td><img src="assets/images/xs/avatar5.jpg" className="avatar  rounded-circle me-2" alt="profile-image" /><span>Adam H</span></td>
-                          <td>18</td>
-                          <td>4 Shirley Ave. West Chicago, IL 60185</td>
-                          <td>May 18, 2021</td>
-                          
-                        </tr>
-                        <tr>
-                          <td>PT-0098</td>
-                          <td><img src="assets/images/xs/avatar9.jpg" className="avatar  rounded-circle me-2" alt="profile-image" /><span>Alexander</span></td>
-                          <td>38</td>
-                          <td>123 6th St. Melbourne, FL 32904</td>
-                          <td>May 13, 2021</td>
-                          
-                        </tr>
-                        <tr>
-                          <td>PT-0999</td>
-                          <td><img src="assets/images/xs/avatar11.jpg" className="avatar  rounded-circle me-2" alt="profile-image" /><span>Gabrielle</span></td>
-                          <td>65</td>
-                          <td>4 Shirley Ave. West Chicago, IL 60185</td>
-                          <td>May 17, 2021</td>
-                          
-                        </tr>
-                        <tr>
-                          <td>PT-0101</td>
-                          <td><img src="assets/images/xs/avatar12.jpg" className="avatar  rounded-circle me-2" alt="profile-image" /><span>Grace</span></td>
-                          <td>40</td>
-                          <td>4 Shirley Ave. West Chicago, IL 60185</td>
-                          <td>May 17, 2021</td>
-                          
-                        </tr>
-                        <tr>
-                          <td>PT-1001</td>
-                          <td><img src="assets/images/xs/avatar8.jpg" className="avatar  rounded-circle me-2" alt="profile-image" /><span>Ryan </span></td>
-                          <td>34</td>
-                          <td>70 Bowman St. South Windsor, CT 06074</td>
-                          <td>May 13, 2021</td>
-                          
-                        </tr>
-                        <tr>
-                          <td>PT-1101</td>
-                          <td><img src="assets/images/xs/avatar7.jpg" className="avatar  rounded-circle me-2" alt="profile-image" /><span>Christian</span></td>
-                          <td>21</td>
-                          <td>123 6th St. Melbourne, FL 32904</td>
-                          <td>May 13, 2021</td>
-                          
-                        </tr>
-                      </tbody>
-                    </table>
+              <div className="row clearfix g-3">
+                <div className="col-sm-12">
+                  <div className="card mb-3">
+                    <div className="card-body overflow-auto">
+                      <div className="schedule">
+                        <div className="schedule_header">
+                          <span className="dl">Time</span>
+                          <span className="ds">Ti</span>
+                        </div>
+                        {/* week*/}
+                        <div className="schedule_header schedule-sunday">
+                          <span className="dl">Sunday</span>
+                          <span className="ds">Su</span>
+                        </div>
+                        <div className="schedule_header schedule-monday">
+                          <span className="dl">Monday</span>
+                          <span className="ds">M</span>
+                        </div>
+                        <div className="schedule_header schedule-tuesday">
+                          <span className="dl">Tuesday</span>
+                          <span className="ds">T</span>
+                        </div>
+                        <div className="schedule_header schedule-wednesday">
+                          <span className="dl">Wednesday</span>
+                          <span className="ds">W</span>
+                        </div>
+                        <div className="schedule_header schedule-thursday">
+                          <span className="dl">Thursday</span>
+                          <span className="ds">Th</span>
+                        </div>
+                        <div className="schedule_header schedule-friday">
+                          <span className="dl">Friday</span>
+                          <span className="ds">F</span>
+                        </div>
+                        <div className="schedule_header schedule-saturday">
+                          <span className="dl">Saturday</span>
+                          <span className="ds">Sa</span>
+                        </div>
+                        {/* Time*/}
+                        <div className="schedule_time time-from-s">07:00 AM</div>
+                        <div className="schedule_time time-from-sf">08:15 AM</div>
+                        <div className="schedule_time time-from-st">10:30 AM</div>
+                        <div className="schedule_time time-from-sff">12:45 AM</div>
+                        <div className="schedule_time time-from-e">01:00 PM</div>
+                        <div className="schedule_time time-from-ef">02:15 PM</div>
+                        <div className="schedule_time time-from-et">03:30 PM</div>
+                        <div className="schedule_time time-from-eff">04:45 PM</div>
+                        <div className="schedule_time time-from-n">05:00 PM</div>
+                        <div className="schedule_time time-from-nf">06:15 PM</div>
+                        <div className="schedule_time time-from-nt">07:30 PM</div>
+                        <div className="schedule_time time-from-nff">09:45 PM</div>
+                        {/*  Grid Rows*/}
+                        <div className="grid time-from-s time-to-sf schedule-row-from-sunday schedule-row-to-saturday" />
+                        <div className="grid time-from-sf time-to-st schedule-row-from-sunday schedule-row-to-saturday" />
+                        <div className="grid time-from-st time-to-sff schedule-row-from-sunday schedule-row-to-saturday" />
+                        <div className="grid time-from-sff time-to-e schedule-row-from-sunday schedule-row-to-saturday" />
+                        <div className="grid time-from-e time-to-ef schedule-row-from-sunday schedule-row-to-saturday" />
+                        <div className="grid time-from-ef time-to-et schedule-row-from-sunday schedule-row-to-saturday" />
+                        <div className="grid time-from-et time-to-eff schedule-row-from-sunday schedule-row-to-saturday" />
+                        <div className="grid time-from-eff time-to-n schedule-row-from-sunday schedule-row-to-saturday" />
+                        <div className="grid time-from-n time-to-nf schedule-row-from-sunday schedule-row-to-saturday" />
+                        <div className="grid time-from-nf time-to-nt schedule-row-from-sunday schedule-row-to-saturday" />
+                        <div className="grid time-from-nt time-to-nff schedule-row-from-sunday schedule-row-to-saturday" />
+                        <div className="grid grid-last time-from-nff time-to-nff schedule-row-from-sunday schedule-row-to-saturday" />
+                        {/*   ./Grid Rows*/}
+                        <div className="grid schedule-sunday time-from-s time-to-nff" />
+                        <div className="grid grid-last schedule-sunday time-from-nff time-to-nff" />
+                        <div className="grid schedule-monday time-from-s time-to-nff" />
+                        <div className="grid grid-last schedule-monday time-from-nff time-to-nff" />
+                        <div className="grid schedule-tuesday time-from-s time-to-nff" />
+                        <div className="grid grid-last schedule-tuesday time-from-nff time-to-nff" />
+                        <div className="grid schedule-wednesday time-from-s time-to-nff" />
+                        <div className="grid grid-last schedule-wednesday time-from-nff time-to-nff" />
+                        <div className="grid schedule-thursday time-from-s time-to-nff" />
+                        <div className="grid grid-last schedule-thursday time-from-nff time-to-nff" />
+                        <div className="grid schedule-friday time-from-s time-to-nff" />
+                        <div className="grid grid-last schedule-friday time-from-nff time-to-nff" />
+                        <div className="grid schedule-saturday time-from-s time-to-nff" />
+                        <div className="grid grid-last schedule-saturday time-from-nff time-to-nff" />
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </div>
+              </div>{/* Row End */}
             </div>
           </div>
           {/* Modal Custom Settings*/}
@@ -480,9 +383,45 @@ function Patient_list(){
               </div>
             </div>
           </div> 
-        </div>
+          {/* Add Schedule*/}
+          <div className="modal fade" id="depadd" tabIndex={-1} aria-hidden="true">
+            <div className="modal-dialog modal-dialog-centered modal-md modal-dialog-scrollable">
+              <div className="modal-content">
+                <div className="modal-header">
+                  <h5 className="modal-title  fw-bold" id="depaddLabel"> Schedule Add</h5>
+                  <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close" />
+                </div>
+                <div className="modal-body">
+                  <div className="deadline-form">
+                    <form>
+                      <div className="row g-3 mb-3">
+                        <div className="col-sm-6">
+                          <label htmlFor="depone" className="form-label">Schedule Day</label>
+                          <input type="text" className="form-control" id="depone" />
+                        </div>
+                        <div className="col-sm-6">
+                          <label htmlFor="deptwo" className="form-label">Schedule Time</label>
+                          <input type="time" className="form-control" id="deptwo" />
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                  <div className="mb-3">
+                    <label className="form-label">Schedule Note</label>
+                    <textarea className="form-control" rows={3} defaultValue={""} />
+                  </div>
+                </div>
+                <div className="modal-footer">
+                  <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Done</button>
+                  <button type="submit" className="btn btn-primary">Add</button>
+                </div>
+              </div>
+            </div>
+          </div>  
+        </div> 
       </div>
-        </div>
     )
+  }
 }
-export default Patient_list;
+
+export default cal
