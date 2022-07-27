@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import Sidebar from "../../../../components/sidebar";
-import Admin from "../../../../components/admin";
+import Admin from "../../../components/admin";
+import Sidebar from "../../../components/sidebar";
 import "./patient_profile.css";
 
 
@@ -933,7 +933,7 @@ export class patient extends Component {
                         </div>
                         </div>
                         </div>
-                        </div> */}
+                        </div>
                         {/* <div class="accordion-item">
                   <h2 class="accordion-header" id="headingSeven">
                     <button
@@ -1143,6 +1143,8 @@ export class patient extends Component {
 
             {/* Modal Custom Settings*/}
            </div>
+           <div className="col-lg-2">
+             <Admin></Admin>
            </div>
       </div>
     );
