@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import Sidebar from "../../../../components/sidebar";
 import Admin from "../../../../components/admin";
+import Sidebar from "../../../../components/sidebar";
 import "./patient_profile.css";
 
 
@@ -11,10 +11,7 @@ export class patient extends Component {
       <div className="col-lg-3">
         <Sidebar></Sidebar>
       </div>
-      <div className="col-lg-9">
-             <Admin></Admin>
-           
-      <div className="col-lg-11">
+      <div className="col-lg-7">
 
         
             {/* Body: Body */}
@@ -1144,7 +1141,6 @@ export class patient extends Component {
             {/* Modal Custom Settings*/}
            </div>
            </div>
-      </div>
     );
   }
 }

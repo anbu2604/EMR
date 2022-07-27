@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
-import Admin from '../../../../components/admin';
-import Sidebar from '../../../../components/sidebar';
+import Admin from '../../../components/admin';
+import Sidebar from '../../../components/sidebar';
 import Swal from 'sweetalert2';
-import { instance } from '../../../../../utils/axios';
+import { instance } from '../../../../utils/axios'
 
 export class register extends Component {
     state = { user: null, error: null };
