@@ -1,9 +1,4 @@
 import React, { Component } from "react";
-import Admin from "../../../components/admin";
-import Sidebar from "../../../components/sidebar";
-
-const url = "http://localhost:3000/patient";
-
 function Sidebar() {
   return (
     <div >
@@ -11,130 +6,64 @@ function Sidebar() {
         {/* sidebar */}
         <div className="sidebar px-4 py-4 py-md-5 me-0">
           <div className="d-flex flex-column h-100">
-            <a href="index.html" className="mb-0 brand-icon">
+            <a href="./dashboard" className="mb-0 brand-icon">
               <span className="logo-icon">
                 <i className="icofont-heart-beat fs-2" />
               </span>
-              <span className="logo-text">EMR</span>
+              <span className="logo-text">DefuseD</span>
             </a>
             {/* Menu: main ul */}
             <ul className="menu-list flex-grow-1 mt-3">
+            <li><a class="m-link active" href="./dashborad"><i class="icofont-ui-home fs-5"></i> <span>Dashboard</span></a></li>
               <li>
-                <a class="m-link active" href="./ui">
-                  <i class="icofont-ui-home fs-5"></i> <span>Dashboard</span>
-                </a>
-              </li>
-              {/* <li><a className="m-link" href="virtual.html"><i className="icofont-ui-video-chat fs-5" /> <span>I-Health Virtual</span></a></li> */}
-              <li className="collapsed">
-                <a
-                  className="m-link"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#menu-Doctor"
-                  href="#"
-                >
-                  <i className="icofont-doctor-alt fs-5" /> <span>Doctor</span>{" "}
-                  <span className="arrow icofont-rounded-down ms-auto text-end fs-5" />
-                </a>
-                {/* Menu: Sub menu ul */}
-                <ul className="sub-menu collapse" id="menu-Doctor">
-                  <li>
-                    <a className="ms-link" href="doctor-all.html">
-                      All Doctors
-                    </a>
-                  </li>
-                  <li>
-                    <a className="ms-link" href="doctor-add.html">
-                      Add Doctor
-                    </a>
-                  </li>
-                  <li>
-                    <a className="ms-link" href="appointment.html">
-                      Appointment
-                    </a>
-                  </li>
-                  <li>
-                    <a className="ms-link" href="doctor-profile.html">
-                      Doctors Profile
-                    </a>
-                  </li>
-                  <li>
-                    <a className="ms-link" href="doctor-schedule.html">
-                      Doctor Schedule
-                    </a>
-                  </li>
-                </ul>
-              </li>
-              <li className="collapsed">
-                <a
-                  className="m-link active"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#menu-Patient"
-                  href="#"
-                >
-                  <i className="icofont-blind fs-5" /> <span>Patient</span>{" "}
-                  <span className="arrow icofont-rounded-down ms-auto text-end fs-5" />
-                </a>
-                {/* Menu: Sub menu ul */}
-                <ul className="sub-menu collapse show" id="menu-Patient">
-                  <li>
-                    <a className="ms-link" href="patient-list.html">
-                      Patient List
-                    </a>
-                  </li>
-                  <li>
-                    <a className="ms-link" href={url}>
-                      Add Patient
-                    </a>
-                  </li>
-                  <li>
-                    <a className="ms-link" href="./patient_profile">
-                      Patient Profile
-                    </a>
-                  </li>
-                  <li>
-                    <a className="ms-link" href="patient-invoices.html">
-                      Patient Invoices
-                    </a>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <a class="m-link active" href="./cal">
-                  <i class="icofont-stretcher fs-5"></i> <span>Schedule</span>
+                <a class="m-link " href="./role_master">
+                <i class="icofont-user-alt-1"></i> <span>Role Master</span>
                 </a>
               </li>
               <li>
-                <a class="m-link active" href="./access">
+                <a class="m-link " href="./access">
                   <i class="icofont-ui-user"></i> <span>Access Privilege</span>
                 </a>
               </li>
               <li>
-                <a class="m-link active" href="./role_master">
-                  <i class="icofont-user-alt-1"></i> <span>Role Master</span>
-                </a>
-              </li>
-              <li>
-                <a class="m-link active" href="./register">
+                <a class="m-link " href="./register">
                   <i class="icofont-user-alt-1"></i> <span>Registration</span>
                 </a>
               </li>
+              <li className="collapsed">
+                <a className="m-link" data-bs-toggle="collapse" data-bs-target="#menu-Doctor" href="#">
+                  <i className="icofont-doctor-alt fs-5" />  <span>Doctor</span> <span className="arrow icofont-rounded-down ms-auto text-end fs-5" /></a>
+                {/* Menu: Sub menu ul */}
+                <ul className="sub-menu collapse" id="menu-Doctor">
+                  <li><a className="ms-link" href="doctor-all.html">All Doctors</a></li>
+                  <li><a className="ms-link" href="doctor-add.html">Add Doctor</a></li>
+                  <li><a className="ms-link" href="appointment.html">Appointment</a></li>
+                  <li><a className="ms-link" href="doctor-profile.html">Doctors Profile</a></li>
+                  <li><a className="ms-link" href="doctor-schedule.html">Doctor Schedule</a></li>
+                </ul>
+              </li>
+              <li className="collapsed">
+                <a className="m-link" data-bs-toggle="collapse" data-bs-target="#menu-Patient" href="#">
+                  <i className="icofont-blind fs-5" /> <span>Patient</span> <span className="arrow icofont-rounded-down ms-auto text-end fs-5" /></a>
+                {/* Menu: Sub menu ul */}
+                <ul className="sub-menu collapse" id="menu-Patient">
+                  <li><a className="ms-link" href="./patient_list">Patient List</a></li>
+                  <li><a className="ms-link" href="./patient_profile">Add Patient</a></li>
+                  <li><a className="ms-link" href="patient-invoices.html">Patient Invoices</a></li>
+                </ul>
+              </li>
+              <li><a class="m-link" href="./cal"><i class="icofont-stretcher fs-5"></i> <span>Schedule</span></a></li>
+              
             </ul>
             {/* Menu: menu collepce btn */}
-            <button
-              type="button"
-              className="btn btn-link sidebar-mini-btn text-light"
-            >
-              <span className="ms-2">
-                <i className="icofont-bubble-right" />
-              </span>
+            <button type="button" className="btn btn-link sidebar-mini-btn text-light">
+              <span className="ms-2"><i className="icofont-bubble-right" /></span>
             </button>
           </div>
         </div>
         {/* main body area */}
         <div className="main px-lg-4 px-md-4">
           {/* Body: Header */}
-          
-
           <div
             className="modal fade right"
             id="Settingmodal"
@@ -420,12 +349,8 @@ function Sidebar() {
               </div>
             </div>
           </div>
-<div className="col-lg-2">
-  <Admin></Admin>
-</div>
           {/* Modal Custom Settings*/}
-             </div>
-
+        </div>
         </div>
       </div>
   )

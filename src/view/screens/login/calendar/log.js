@@ -8,7 +8,7 @@ export class login extends Component {
   constructor(){
     super()
     this.state = {
-      phoneNumber: "9940683837",
+      username: "9940683837",
       password: "raja1234"
     };
     this.handleChange = this.handleChange.bind(this);
@@ -20,7 +20,7 @@ export class login extends Component {
   async handlesubmit(){
     try{
       let user = await instance.post('/login',{
-        "phoneNumber": this.state.phoneNumber,
+        "username": this.state.username,
         "password": this.state.password
     })
     console.log("datas",user)
@@ -47,7 +47,7 @@ export class login extends Component {
                     <i className="icofont-heart-beat secondary-color" style={{fontSize: '90px'}} />
                   </div>
                   <div className="mb-5">
-                    <h2 className="color-900 text-center">EMR, We aim to make your life better</h2>
+                    <h2 className="color-900 text-center">DefuseD, We aim to make your life better</h2>
                   </div>
                   {/* Image block */}
                   <div className>
@@ -75,7 +75,7 @@ export class login extends Component {
                     <div className="col-12">
                       <div className="mb-2">
                         <label className="form-label">Email address</label>
-                        <input type="text" onChange={this.handleChange} value={this.state.phoneNumber} name='phoneNumber' id="signup_email" className="form-control form-control-lg" placeholder="7708093833" />
+                        <input type="text" onChange={this.handleChange} value={this.state.username} name='username' id="signup_email" className="form-control form-control-lg" placeholder="7708093833" />
                       </div>
                     </div>
                     <div className="col-12">

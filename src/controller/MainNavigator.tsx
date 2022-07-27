@@ -15,7 +15,7 @@ import Permissions from '../view/screens/login/calendar/access_privilege/permiss
 import Access_privilege from '../view/screens/login/calendar/access_privilege/access_privilege';
 import Role_Master from '../view/screens/login/calendar/role_master/role_master';
 import Add_role from '../view/screens/login/calendar/role_master/add_role';
-// import MedicalReport from '../view/screens/login/calendar/medical_record/medical_record';
+import MedicalReport from '../view/screens/login/calendar/medical_record/medical_record';
 import History from '../view/screens/login/calendar/History/general';
 import Family_history from '../view/screens/login/calendar/History/family_history';
 import Life_style from '../view/screens/login/calendar/History/life-style';
@@ -48,7 +48,7 @@ function MainNavigator() {
         <Route path="/family_history" element={<Family_history />} />
         <Route path="/add_role" element={<Add_role />} />
         <Route path="/Patient_profile" element={<Patient_profile />} />
-        {/* <Route path="/medical_report" element={<MedicalReport />} /> */}
+        <Route path="/medical_report" element={<MedicalReport />} />
         <Route path="/fl" element={<Fl />} />
         <Route path="/message_form" element={<Medical_form />} />
         <Route path="/calendar" element={<Calendar />} />
