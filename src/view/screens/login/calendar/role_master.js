@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import Admin from "../../../components/admin";
-
 import Sidebar from "../../../components/sidebar";
 
 function Role_Master() {
