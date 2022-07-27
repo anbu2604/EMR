@@ -1,7 +1,6 @@
 import React, { Component } from "react";
-import Admin from "../../../components/admin";
-import Sidebar from "../../../components/sidebar";
-
+import Sidebar from "../../../../components/sidebar";
+import Admin from "../../../../components/admin";
 
 function Permissions() {
   return (
@@ -9,7 +8,9 @@ function Permissions() {
     <div className="col-lg-3">
       <Sidebar></Sidebar>
     </div>
-    <div className="col-lg-7">
+    <div className="col-lg-9">
+  <Admin></Admin>
+    <div className="col-lg-12">
      
           {/* Body: Body */}
 
@@ -236,8 +237,7 @@ function Permissions() {
             </div>
           </div>
 </div>
-<div className="col-lg-2">
-  <Admin></Admin>
+
 </div>
           {/* Modal Custom Settings*/}
              </div>
