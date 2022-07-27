@@ -14,7 +14,7 @@ function Sidebar() {
             </a>
             {/* Menu: main ul */}
             <ul className="menu-list flex-grow-1 mt-3">
-            <li><a class="m-link active" href="./dashborad"><i class="icofont-ui-home fs-5"></i> <span>Dashboard</span></a></li>
+            <li><a class="m-link active" href="./dashboard"><i class="icofont-ui-home fs-5"></i> <span>Dashboard</span></a></li>
               <li>
                 <a class="m-link " href="./role_master">
                 <i class="icofont-user-alt-1"></i> <span>Role Master</span>

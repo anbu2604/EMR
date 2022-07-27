@@ -1,20 +1,65 @@
-import React, { Component } from "react";
+import { React } from "react";
+import { Hospital } from "react-bootstrap-icons";
 import Sidebar from "../../../../components/sidebar";
 import Admin from "../../../../components/admin";
+import  { useState } from "react";
+import { Slider } from "@material-ui/core";
 
 function Medical_record() {
+  const temperature = [
+    {
+      value: 0,
+      label: "0°C",
+    },
+       {
+      value: 50,
+      label: "50°C",
+    },
+       {
+      value: 100,
+      label: "100°C",
+    },
+  ];
+  const [val, setVal] = useState([0, 40]);
+  const updateRange = (e, data) => {
+    setVal(data);
+  };
+  const bmi = [
+    {
+      value: 0,
+      label: "0",
+    },
+       {
+      value: 50,
+      label: "50",
+    },
+       {
+      value: 100,
+      label: "100",
+    },
+  ];
+  const [value, setValue] = useState([0, 40]);
+  const updateValue = (e, data) => {
+    setValue(data);
+  };
   return (
-<div className="row">
+    <div className="row">
       <div className="col-lg-3">
         <Sidebar></Sidebar>
       </div>
-  <div className="col-lg-7">
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div className="col-lg-9">
+        <Admin></Admin>
+        <div className="col-lg-12">
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
               <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="./medical_report">
+                    <a
+                      class="nav-link active"
+                      aria-current="page"
+                      href="./medical_report"
+                    >
                       Dashboard
                     </a>
                   </li>
@@ -24,27 +69,26 @@ function Medical_record() {
                     </a>
                   </li>
                   <li class="nav-item">
-                  <a class="nav-link" href="./report">
+                    <a class="nav-link" href="./report">
                       Report
                     </a>
                   </li>
                   <li class="nav-item">
-                  <a class="nav-link" href="./eye_module">
+                    <a class="nav-link" href="./eye_module">
                       Documents
                     </a>
                   </li>
                   <li class="nav-item">
-                  <a class="nav-link" href="./transaction">
+                    <a class="nav-link" href="./transaction">
                       Transactions
                     </a>
                   </li>
-                 
+
                   <li class="nav-item">
                     <a class="nav-link" href="#">
                       Ledger
                     </a>
                   </li>
-                  
                 </ul>
               </div>
             </div>
@@ -984,8 +1028,10 @@ function Medical_record() {
                     data-bs-parent="#accordionExample"
                   >
                     <div class="accordion-body">
-                      <div className="row float-end"><a href="./message_form">
-                      <i class="icofont-ui-edit " ></i></a>
+                      <div className="row float-end">
+                        <a href="./message_form">
+                          <i class="icofont-ui-edit "></i>
+                        </a>
                       </div>
                       <div className="row">
                         <label>
@@ -1016,8 +1062,10 @@ function Medical_record() {
                     data-bs-parent="#accordionExample"
                   >
                     <div class="accordion-body">
-                    <div className="row float-end"><a href="./patient_reminder">
-                      <i class="icofont-ui-edit " ></i></a>
+                      <div className="row float-end">
+                        <a href="./patient_reminder">
+                          <i class="icofont-ui-edit "></i>
+                        </a>
                       </div>
                       <div className="row">
                         <label>No active patient reminders.</label>
@@ -1045,8 +1093,10 @@ function Medical_record() {
                     data-bs-parent="#accordionExample"
                   >
                     <div class="accordion-body">
-                    <div className="row float-end"><a href="./message_form">
-                      <i class="icofont-ui-edit " ></i></a>
+                      <div className="row float-end">
+                        <a href="./message_form">
+                          <i class="icofont-ui-edit "></i>
+                        </a>
                       </div>
                       <div className="row">
                         <table class="table">
@@ -1151,86 +1201,102 @@ function Medical_record() {
                         <br></br>
                         <br></br>
                       </div>
-                      <div className="row">
-                        <label className="col-md-3 col-lg-3 col-sm-12 fw-bold">
-                          Blood Pressure:
-                        </label>
-                        <p className="col-md-3 col-lg-6 col-sm-12">130/80</p>
-                      </div>
+
                       <div className="row">
                         <label className="col-md-3 col-lg-3 col-sm-12 fw-bold">
                           Weight:
                         </label>
                         <br></br>
-                        <p className="col-md-3 col-lg-6 col-sm-12">
-                          220.00 lb (99.79 kg)
+                        <p className="col-md-3 col-lg-3 col-sm-12">
+                          <input
+                            type="range"
+                            class="form-range primary"
+                            min="0"
+                            max="5"
+                            id="customRange2"
+                          />
                         </p>
-                      </div>
-                      <div className="row">
                         <label className="col-md-3 col-lg-3 col-sm-12 fw-bold">
                           Height:
                         </label>
-                        <br></br>
-                        <p className="col-md-3 col-lg-6 col-sm-12">
-                          70.00 in (177.8 cm)
+                        <p className="col-md-3 col-lg-3 col-sm-12">
+                        <input
+                            type="range"
+                            class="form-range primary"
+                            min="0"
+                            max="5"
+                            id="customRange2"
+                          />
                         </p>
                       </div>
+
                       <div className="row">
-                        <label className="col-md-3 col-lg-3 col-sm-12 fw-bold">
+                        <label className="col-md-3 col-lg-2 col-sm-12 fw-bold p-1">
                           Temperature:
                         </label>
                         <br></br>
-                        <p className="col-md-3 col-lg-6 col-sm-12">
-                          98.00 F (36.67 C)
+                        <p className="col-md-3 col-lg-4 col-sm-12 text-center" style={{ border:"2px solid black", 'borderRadius': "10px"}}>
+                        <Slider  value={val} onChange={updateRange} marks={temperature} />
                         </p>
+                        <label className="col-md-3 col-lg-2 col-sm-12 fw-bold">
+                          BMI:{" "}
+                        </label>
+                        <br></br>
+                        <p className="col-md-3 col-lg-4 col-sm-12" style={{ border:"2px solid black", 'borderRadius': "10px"}}>
+                  
+                        <Slider value={value} onChange={updateValue} marks={bmi} /></p>
                       </div>
                       <div className="row">
                         <label className="col-md-3 col-lg-3 col-sm-12 fw-bold">
                           Temp Method:
                         </label>
                         <br></br>
-                        <p className="col-md-3 col-lg-6 col-sm-12"> Oral</p>
-                      </div>
-                      <div className="row">
+                        <p className="col-md-3 col-lg-3 col-sm-12">  <select
+                            className="form-select col-lg-4"
+                            aria-label="Default select example"
+                          >
+                            <option selected>Select</option>
+                            <option value={1}>Oral.</option>
+                            <option value={2}>""</option>
+                            
+                            
+                          </select></p>
                         <label className="col-md-3 col-lg-3 col-sm-12 fw-bold">
-                          Pulse:
+                          BMI Status:
                         </label>
                         <br></br>
-                        <p className="col-md-3 col-lg-6 col-sm-12">
-                          {" "}
-                          60 per min
-                        </p>
+                        <p className="col-md-3 col-lg-3 col-sm-12">Obesity I</p>
                       </div>
+
                       <div className="row">
                         <label className="col-md-3 col-lg-3 col-sm-12 fw-bold">
                           Respiration:{" "}
                         </label>
                         <br></br>
-                        <p className="col-md-3 col-lg-6 col-sm-12">
+                        <p className="col-md-3 col-lg-3 col-sm-12">
                           {" "}
                           20 per min
                         </p>
+                        <label className="col-md-3 col-lg-3 col-sm-12 fw-bold">
+                          Blood Pressure:
+                        </label>
+                        <p className="col-md-3 col-lg-3 col-sm-12">130/80</p>
                       </div>
+
                       <div className="row">
                         <label className="col-md-3 col-lg-3 col-sm-12 fw-bold">
-                          BMI:{" "}
+                          Pulse:
                         </label>
                         <br></br>
-                        <p className="col-md-3 col-lg-6 col-sm-12">32 kg/m^2</p>
-                      </div>
-                      <div className="row">
-                        <label className="col-md-3 col-lg-3 col-sm-12 fw-bold">
-                          BMI Status:
-                        </label>
-                        <br></br>
-                        <p className="col-md-3 col-lg-6 col-sm-12">Obesity I</p>
-                      </div>
-                      <div className="row">
+                        <p className="col-md-3 col-lg-3 col-sm-12">
+                          {" "}
+                          60 per min
+                        </p>
                         <label className="col-md-3 col-lg-3 col-sm-12 fw-bold">
                           Oxygen Saturation:{" "}
                         </label>
                         <br></br>
-                        <p className="col-md-3 col-lg-6 col-sm-12">98 %</p>
+                        <p className="col-md-3 col-lg-3 col-sm-12">98 %</p>
                       </div>
                     </div>
                   </div>
@@ -1779,12 +1845,9 @@ function Medical_record() {
               </div>
             </div>
           </div>
-   </div>
-   <div className="col-lg-2">
-        <Admin></Admin>
+        </div>
+      </div>
     </div>
-</div>
-
   );
 }
 
