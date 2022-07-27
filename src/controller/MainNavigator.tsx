@@ -29,6 +29,7 @@ function MainNavigator() {
     <div className="App">
       <Routes>
         {/* Login */}
+        <Route path="/" element={<Log />} />
         <Route path="/register" element={<Register/>} />
         <Route path="/cal" element={<Cal />} />
         <Route path="/usr" element={<Usr />} />
@@ -50,11 +51,7 @@ function MainNavigator() {
         <Route path="/patient_list" element={<Patient_list />} />
         <Route path="/ui" element={<Ui />} />
         <Route path="/dashboard" element={<Ui />} />
-        <Route path="/" element={<Log />} />
-          
-        <Route path="/patient" element={<Patient />} />
-
-            
+        <Route path="/patient" element={<Patient />} />            
       </Routes>
     </div>
   );
