@@ -12,7 +12,7 @@ function Patient_list(){
               <span className="logo-icon">
                 <i className="icofont-heart-beat fs-2" />
               </span>
-              <span className="logo-text">EMR</span>
+              <span className="logo-text">DefuseD</span>
             </a>
             {/* Menu: main ul */}
             <ul className="menu-list flex-grow-1 mt-3">

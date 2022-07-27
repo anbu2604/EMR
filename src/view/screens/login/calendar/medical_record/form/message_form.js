@@ -1,6 +1,6 @@
 import React from "react";
-import Sidebar from "../../../../components/sidebar";
-import Admin from "../../../../components/admin";
+import Sidebar from "../../../../../components/sidebar";
+import Admin from "../../../../../components/admin";
 
 const Medical_form = () => {
   return (
