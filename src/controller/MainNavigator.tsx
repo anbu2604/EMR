@@ -5,7 +5,7 @@ import '../utils/css/App.css';
 import Ui from '../view/screen/Ui'
 import Patient from '../view/screen/patient/patient';
 import Schedule from '../view/screen/schedule/schedule'
-import Log from '../view/screen/auth/register'
+import Log from '../view/screen/auth/log'
 import Patient_list from '../view/screen/patient/patient_list';
 import Calendar from '../view/screen/calendar/calendar';
 import Patient_profile from '../view/screen/patient/patient_profile';
