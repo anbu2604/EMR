@@ -13,7 +13,7 @@ import Permissions from '../view/screen/access_privilege/permissions';
 import Access_privilege from '../view/screen/access_privilege/access_privilege';
 import Role_Master from '../view/screen/role_master/role_master';
 import Add_role from '../view/screen/role_master/add_role';
-import MedicalReport from '../view/screen/medical_record/medical_record';
+import Medical_record from "../view/screen/medical_record/medical_record";
 import History from '../view/screen/History/general';
 import Family_history from '../view/screen/History/family_history';
 import Life_style from '../view/screen/History/life-style';
@@ -25,6 +25,10 @@ import Patient_reminder from '../view/screen/medical_record/form/patient_reminde
 import Rules from '../view/screen/medical_record/form/rules';
 import Disclosuer from '../view/screen/medical_record/form/disclosuer';
 import Register from '../view/screen/auth/register';
+import Eye_module from "../view/screen/Documents/Eye_module";
+import Lab_report from "../view/screen/Documents/Lab_report";
+import MedicalRecord from "../view/screen/Documents/Medical_report";
+
 function MainNavigator() {
   return (
     <div className="App">
@@ -48,12 +52,15 @@ function MainNavigator() {
         <Route path="/family_history" element={<Family_history />} />
         <Route path="/add_role" element={<Add_role />} />
         <Route path="/patient_profile" element={<Patient_profile />} />
-        <Route path="/medical_report" element={<MedicalReport />} />
+        <Route path="/medical_report" element={<Medical_record />} />
         <Route path="/message_form" element={<Medical_form />} />
         <Route path="/calendar" element={<Calendar />} />
         <Route path="/patient_list" element={<Patient_list />} />
         <Route path="/dashboard" element={<Ui />} />
         <Route path="/patient" element={<Patient />} />            
+        <Route path="/documents" element={<Eye_module />} />    
+        <Route path="/lab_report" element={<Lab_report />} />    
+        <Route path="/medical_record" element={<MedicalRecord />} />    
       </Routes>
     </div>
   );

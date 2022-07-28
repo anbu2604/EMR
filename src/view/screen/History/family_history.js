@@ -6,7 +6,9 @@ function Family_history() {
       <div className="col-lg-3">
         <Sidebar></Sidebar>
       </div>
-      <div className="col-lg-7">
+      <div className="col-lg-9">
+        <Admin></Admin>
+      <div className="col-lg-10">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
           <div class="container-fluid">
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -31,7 +33,7 @@ function Family_history() {
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="./eye_module">
+                  <a class="nav-link" href="./documents">
                     Documents
                   </a>
                 </li>
@@ -41,11 +43,7 @@ function Family_history() {
                   </a>
                 </li>
 
-                <li class="nav-item">
-                  <a class="nav-link" href="#">
-                    Ledger
-                  </a>
-                </li>
+              
               </ul>
             </div>
           </div>
@@ -58,7 +56,7 @@ function Family_history() {
             </button>
           </div>
           <div className="col-lg-6">
-            <h4 className="col-4 float-end fw-bold">Family History</h4>
+            <h4 className="col-6 float-end fw-bold">Family History</h4>
           </div>
         </div>
 
@@ -125,8 +123,7 @@ function Family_history() {
           </div>
         </div>
       </div>
-      <div className="col-lg-2">
-        <Admin></Admin>
+    
       </div>
     </div>
   );

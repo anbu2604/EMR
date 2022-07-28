@@ -23,7 +23,7 @@ const Eye_module = () => {
               id="menu"
             >
               <li className="nav-item">
-                <a href="./eye_module" className="nav-link align-middle px-0">
+                <a href="./documents" className="nav-link align-middle px-0">
                   <i className="fs-4 bi-house" />{" "}
                   <span className="ms-1 d-none d-sm-inline">Eye Module</span>
                 </a>
@@ -81,11 +81,7 @@ const Eye_module = () => {
                     </a>
                   </li>
                   
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">
-                      Ledger
-                    </a>
-                  </li>
+                 
                  
                 </ul>
                 

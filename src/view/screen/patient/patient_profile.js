@@ -3,20 +3,17 @@ import Sidebar from "../../components/sidebar";
 import Admin from "../../components/admin";
 import "./patient_profile.css";
 
-
 export class patient extends Component {
   render() {
     return (
       <div className="row">
-      <div className="col-lg-3">
-        <Sidebar></Sidebar>
-      </div>
-      <div className="col-lg-9">
-        <Admin></Admin>
-     
-      <div className="col-lg-11">
+        <div className="col-lg-3">
+          <Sidebar></Sidebar>
+        </div>
+        <div className="col-lg-9">
+          <Admin></Admin>
 
-        
+          <div className="col-lg-10">
             {/* Body: Body */}
             <div className="container p-3 m-3">
               <div class="accordion" id="accordionExample">
@@ -41,10 +38,12 @@ export class patient extends Component {
                   >
                     <div class="accordion-body">
                       <div className="row">
-                        <label className="col-md-3 col-lg-2 col-sm-12">Name:</label>
+                        <label className="col-md-3 col-lg-2 col-sm-12">
+                          Name:
+                        </label>
                         <div className="col-lg-2 col-md-3 col-sm-12">
                           <select
-                            className="form-select col-lg-4"
+                            className="form-select "
                             aria-label="Default select example"
                           >
                             <option selected>Select</option>
@@ -54,7 +53,6 @@ export class patient extends Component {
                             <option value={4}>Dr.</option>
                             <option value={5}>Baby</option>
                             <option value={6}>Master</option>
-                            
                           </select>
                         </div>
                         <div class="form-group col-lg-2 col-md-3 col-sm-12 ">
@@ -81,10 +79,11 @@ export class patient extends Component {
                             placeholder="Last Name"
                           />
                         </div>
-                        
                       </div>
                       <div className="row">
-                        <label className="col-md-3 col-lg-2 col-sm-12">External ID:</label>
+                        <label className="col-md-3 col-lg-2 col-sm-12">
+                          External ID:
+                        </label>
                         <div class=" col-lg-2 col-md-3 col-sm-12">
                           <input
                             type="text"
@@ -93,7 +92,9 @@ export class patient extends Component {
                             placeholder=""
                           />
                         </div>
-                        <label className="col-md-3 col-lg-2 col-sm-12">DOB:</label>
+                        <label className="col-md-3 col-lg-2 col-sm-12">
+                          DOB:
+                        </label>
 
                         <div class="form-group col-lg-2 col-md-3 col-sm-12">
                           <input
@@ -110,84 +111,89 @@ export class patient extends Component {
                             placeholder="Age"
                           />
                         </div>
+                      </div>
 
-                        <div className="row">
-                          <label className="col-md-3 col-lg-2 col-sm-12">Sex:</label>
-                          <div className="col-lg-2 col-md-3 col-sm-12">
-                            <select
-                              className="form-select col-lg-4"
-                              aria-label="Default select example"
-                            >
-                              <option selected>Select</option>
-                              <option value={1}>Male</option>
-                              <option value={2}>Female</option>
-                              <option value={2}>Others</option>
-                            </select>
-                          </div>
-                          <label className="col-md-3 col-lg-2 col-sm-12">Aadhar:</label>
-
-                          <div class="form-group col-lg-2 col-md-3 col-sm-12">
-                            <input
-                              type="number"
-                              class="form-control"
-                              id="formGroupExampleInput2"
-                            />
-                          </div>
+                      <div className="row">
+                        <label className="col-md-3 col-lg-2 col-sm-12">
+                          Sex:
+                        </label>
+                        <div className="col-lg-2 col-md-3 col-sm-12">
+                          <select
+                            className="form-select "
+                            aria-label="Default select example"
+                          >
+                            <option selected>Select</option>
+                            <option value={1}>Male</option>
+                            <option value={2}>Female</option>
+                            <option value={2}>Others</option>
+                          </select>
                         </div>
-                        <div className="row">
-                          
+                        <label className="col-md-3 col-lg-2 col-sm-12">
+                          Aadhar:
+                        </label>
 
-                          <label className="col-md-3 col-lg-2 col-sm-12">
-                            Marital Status:
-                          </label>
-                          <div className="col-lg-2 col-md-3 col-sm-12 ">
-                            <select
-                              className="form-select col-lg-4"
-                              aria-label="Default select example"
-                            >
-                              <option selected>Select</option>
-                              <option value={2}>Married</option>
-                              <option value={2}>Unmarried</option>
-                            </select>
-                          </div>
+                        <div class="form-group col-lg-2 col-md-3 col-sm-12">
+                          <input
+                            type="number"
+                            class="form-control"
+                            id="formGroupExampleInput2"
+                          />
                         </div>
-                        <div className="row">
-                          <label className="col-md-3 col-lg-2 col-sm-12">User Defined:</label>
-                          <div class="form-group col-lg-2 col-md-3 col-sm-12">
-                            <input
-                              type="text"
-                              class="form-control"
-                              id="formGroupExampleInput2"
-                              placeholder=""
-                            />
-                          </div>
-                          <div class="form-group col-lg-2 col-md-3 col-sm-12 ">
-                            <input
-                              type="text"
-                              class="form-control"
-                              id="formGroupExampleInput2"
-                              placeholder=""
-                            />
-                          </div>
-                          <div class="form-group col-lg-2 col-md-3 col-sm-12">
-                            <input
-                              type="text"
-                              class="form-control"
-                              id="formGroupExampleInput2"
-                              placeholder=""
-                            />
-                          </div>
+                      </div>
+                      <div className="row">
+                        <label className="col-md-3 col-lg-2 col-sm-12">
+                          Marital Status:
+                        </label>
+                        <div className="col-lg-2 col-md-3 col-sm-12 ">
+                          <select
+                            className="form-select col-lg-4"
+                            aria-label="Default select example"
+                          >
+                            <option selected>Select</option>
+                            <option value={2}>Married</option>
+                            <option value={2}>Unmarried</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div className="row">
+                        <label className="col-md-3 col-lg-2 col-sm-12">
+                          User Defined:
+                        </label>
+                        <div class="form-group col-lg-2 col-md-3 col-sm-12">
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="formGroupExampleInput2"
+                            placeholder=""
+                          />
+                        </div>
+                        <div class="form-group col-lg-2 col-md-3 col-sm-12 ">
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="formGroupExampleInput2"
+                            placeholder=""
+                          />
+                        </div>
+                        <div class="form-group col-lg-2 col-md-3 col-sm-12">
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="formGroupExampleInput2"
+                            placeholder=""
+                          />
+                        </div>
 
-                          <div class="form-group col-lg-2 col-md-3 col-sm-12">
-                            <input
-                              type="text"
-                              class="form-control"
-                              id="formGroupExampleInput2"
-                            />
-                          </div>
+                        <div class="form-group col-lg-2 col-md-3 col-sm-12">
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="formGroupExampleInput2"
+                          />
                         </div>
-                       
-                        {/* <div className="row">
+                      </div>
+
+                      {/* <div className="row">
                          
                           <label className="col-md-3 col-lg-2 col-sm-12">Sexual Orientation:</label>
 
@@ -206,9 +212,6 @@ export class patient extends Component {
                             </select>
                           </div>
                         </div> */}
-                       
-                        
-                      </div>
                     </div>
                   </div>
                 </div>
@@ -233,8 +236,10 @@ export class patient extends Component {
                   >
                     <div class="accordion-body">
                       <div className="row">
-                        <label className="col-md-3 col-lg-2 col-sm-12">Address :</label>
-                        <div class="form-group col-lg-2 col-md-3 col-sm-12">
+                        <label className="col-md-3 col-lg-3 col-sm-12">
+                          Address :
+                        </label>
+                        <div class="form-group col-lg-3 col-md-3 col-sm-12">
                           <input
                             type="text"
                             class="form-control"
@@ -243,8 +248,10 @@ export class patient extends Component {
                           />
                         </div>
 
-                        <label className="col-md-3 col-lg-2 col-sm-12">Address Line 2:</label>
-                        <div class="form-group col-lg-2 col-md-3 col-sm-12">
+                        <label className="col-md-3 col-lg-3 col-sm-12">
+                          Address Line 2:
+                        </label>
+                        <div class="form-group col-lg-3 col-md-3 col-sm-12">
                           <input
                             type="text"
                             class="form-control"
@@ -254,8 +261,10 @@ export class patient extends Component {
                         </div>
                       </div>
                       <div className="row">
-                        <label className="col-md-3 col-lg-2 col-sm-12">City :</label>
-                        <div class="form-group col-lg-2 col-md-3 col-sm-12">
+                        <label className="col-md-3 col-lg-3 col-sm-12">
+                          City :
+                        </label>
+                        <div class="form-group col-lg-3 col-md-3 col-sm-12">
                           <input
                             type="text"
                             class="form-control"
@@ -264,8 +273,66 @@ export class patient extends Component {
                           />
                         </div>
 
-                        <label className="col-md-3 col-lg-2 col-sm-12">State:</label>
-                        <div className="col-lg-2 col-md-3 col-sm-12">
+                        <label className="col-md-3 col-lg-3 col-sm-12">
+                          State:
+                        </label>
+                        <div className="col-lg-3 col-md-3 col-sm-12">
+                          <select
+                            className="form-select col-lg-4"
+                            aria-label="Default select example"
+                          >
+                            <option selected>Select</option>
+                            <option value={1}>Andhra Pradesh </option>
+                            <option value={2}>Arunachal Pradesh </option>
+                            <option value={2}>Assam</option>
+                            <option value={2}>Bihar</option>
+                            <option value={2}>Chhattisgarh</option>
+                            <option value={2}>Goa</option>
+                            <option value={2}>Gujarat</option>
+
+                            <option value={2}>Haryana</option>
+                            <option value={2}>Himachal Pradesh</option>
+                            <option value={2}>Jharkhand</option>
+                            <option value={2}>Karnataka</option>
+
+                            <option value={2}>Karnataka</option>
+                            <option value={2}>Madhya Pradesh</option>
+
+                            <option value={2}>Maharashtra</option>
+                            <option value={2}>Manipur</option>
+                            <option value={2}>Meghalaya</option>
+                            <option value={2}>Mizoram</option>
+                            <option value={2}>Nagaland</option>
+                            <option value={2}>Odisha</option>
+                            <option value={2}>Punjab</option>
+                            <option value={2}>Rajasthan</option>
+                            <option value={2}>Sikkim</option>
+                            <option value={2}>Tamil Nadu</option>
+                            <option value={2}>Telangana</option>
+                            <option value={2}>Tripura</option>
+                            <option value={2}>Uttar Pradesh</option>
+                            <option value={2}>Uttarakhand</option>
+                            <option value={2}>West Bengal</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div className="row">
+                        <label className="col-md-3 col-lg-3 col-sm-12">
+                          Postal Code :
+                        </label>
+                        <div class="form-group col-lg-3 col-md-3 col-sm-12">
+                          <input
+                            type="number"
+                            class="form-control"
+                            id="formGroupExampleInput2"
+                            placeholder=""
+                          />
+                        </div>
+
+                        <label className="col-md-3 col-lg-3 col-sm-12">
+                          Country:
+                        </label>
+                        <div className="col-lg-3 col-md-3 col-sm-12">
                           <select
                             className="form-select col-lg-4"
                             aria-label="Default select example"
@@ -278,32 +345,10 @@ export class patient extends Component {
                         </div>
                       </div>
                       <div className="row">
-                        <label className="col-md-3 col-lg-2 col-sm-12">Postal Code :</label>
-                        <div class="form-group col-lg-2 col-md-3 col-sm-12">
-                          <input
-                            type="number"
-                            class="form-control"
-                            id="formGroupExampleInput2"
-                            placeholder=""
-                          />
-                        </div>
-
-                        <label className="col-md-3 col-lg-2 col-sm-12">Country:</label>
-                        <div className="col-lg-2 col-md-3 col-sm-12">
-                          <select
-                            className="form-select col-lg-4"
-                            aria-label="Default select example"
-                          >
-                            <option selected>Select</option>
-                            <option value={1}>""</option>
-                            <option value={2}>""</option>
-                            <option value={2}>""</option>
-                          </select>
-                        </div>
-                      </div>
-                      <div className="row">
-                        <label className="col-md-3 col-lg-2 col-sm-12">Mother`s Name:</label>
-                        <div class="form-group col-lg-2 col-md-3 col-sm-12">
+                        <label className="col-md-3 col-lg-3 col-sm-12">
+                          Mother`s Name:
+                        </label>
+                        <div class="form-group col-lg-3 col-md-3 col-sm-12">
                           <input
                             type="text"
                             class="form-control"
@@ -312,8 +357,10 @@ export class patient extends Component {
                           />
                         </div>
 
-                        <label className="col-md-3 col-lg-2 col-sm-12">Emergency Contact:</label>
-                        <div class="form-group col-lg-2 col-md-3 col-sm-12">
+                        <label className="col-md-3 col-lg-3 col-sm-12">
+                          Emergency Contact:
+                        </label>
+                        <div class="form-group col-lg-3 col-md-3 col-sm-12">
                           <input
                             type="number"
                             class="form-control"
@@ -323,8 +370,10 @@ export class patient extends Component {
                         </div>
                       </div>
                       <div className="row">
-                        <label className="col-md-3 col-lg-2 col-sm-12">Emergency Phone:</label>
-                        <div class="form-group col-lg-2 col-md-3 col-sm-12">
+                        <label className="col-md-3 col-lg-3 col-sm-12">
+                          Emergency Phone:
+                        </label>
+                        <div class="form-group col-lg-3 col-md-3 col-sm-12">
                           <input
                             type="number"
                             class="form-control"
@@ -333,8 +382,10 @@ export class patient extends Component {
                           />
                         </div>
 
-                        <label className="col-md-3 col-lg-2 col-sm-12">Home Phone:</label>
-                        <div class="form-group col-lg-2 col-md-3 col-sm-12">
+                        <label className="col-md-3 col-lg-3 col-sm-12">
+                          Home Phone:
+                        </label>
+                        <div class="form-group col-lg-3 col-md-3 col-sm-12">
                           <input
                             type="number"
                             class="form-control"
@@ -344,8 +395,10 @@ export class patient extends Component {
                         </div>
                       </div>
                       <div className="row">
-                        <label className="col-md-3 col-lg-2 col-sm-12">Work Phone:</label>
-                        <div class="form-group col-lg-2 col-md-3 col-sm-12">
+                        <label className="col-md-3 col-lg-3 col-sm-12">
+                          Work Phone:
+                        </label>
+                        <div class="form-group col-lg-3 col-md-3 col-sm-12">
                           <input
                             type="number"
                             class="form-control"
@@ -354,8 +407,10 @@ export class patient extends Component {
                           />
                         </div>
 
-                        <label className="col-md-3 col-lg-2 col-sm-12">Mobile Phone:</label>
-                        <div class="form-group col-lg-2 col-md-3 col-sm-12">
+                        <label className="col-md-3 col-lg-3 col-sm-12">
+                          Mobile Phone:
+                        </label>
+                        <div class="form-group col-lg-3 col-md-3 col-sm-12">
                           <input
                             type="number"
                             class="form-control"
@@ -365,8 +420,10 @@ export class patient extends Component {
                         </div>
                       </div>
                       <div className="row">
-                        <label className="col-md-3 col-lg-2 col-sm-12">Contact Email:</label>
-                        <div class="form-group col-lg-2 col-md-3 col-sm-12">
+                        <label className="col-md-3 col-lg-3 col-sm-12">
+                          Contact Email:
+                        </label>
+                        <div class="form-group col-lg-3 col-md-3 col-sm-12">
                           <input
                             type="email"
                             class="form-control"
@@ -375,8 +432,10 @@ export class patient extends Component {
                           />
                         </div>
 
-                        <label className="col-md-3 col-lg-2 col-sm-12">Trusted Email:</label>
-                        <div class="form-group col-lg-2 col-md-3 col-sm-12">
+                        <label className="col-md-3 col-lg-3 col-sm-12">
+                          Trusted Email:
+                        </label>
+                        <div class="form-group col-lg-3 col-md-3 col-sm-12">
                           <input
                             type="email"
                             class="form-control"
@@ -409,7 +468,7 @@ export class patient extends Component {
                   >
                     <div class="accordion-body">
                       <div className="row">
-                        <label className="col-md-3 col-lg-2 col-sm-12">
+                        <label className="col-md-3 col-lg-4 col-sm-12">
                           Provider:
                         </label>
                         <div className="col-lg-2 col-md-3 col-sm-12 ">
@@ -424,7 +483,7 @@ export class patient extends Component {
                           </select>
                         </div>
 
-                        <label className="col-md-3 col-lg-2 col-sm-12">
+                        <label className="col-md-3 col-lg-4 col-sm-12">
                           Referring Provider:
                         </label>
                         <div className="col-lg-2 col-md-3 col-sm-12">
@@ -440,7 +499,7 @@ export class patient extends Component {
                         </div>
                       </div>
                       <div className="row">
-                        <label className="col-md-3 col-lg-2 col-sm-12">
+                        <label className="col-md-3 col-lg-4 col-sm-12">
                           Leave Message With:
                         </label>
                         <div class="form-group col-lg-2 col-md-3 col-sm-12">
@@ -451,11 +510,9 @@ export class patient extends Component {
                             placeholder=""
                           />
                         </div>
-
-                        
                       </div>
                       <div className="row">
-                        <label className="col-md-3 col-lg-2 col-sm-12">
+                        <label className="col-md-3 col-lg-4 col-sm-12">
                           Allow Mail Message:
                         </label>
                         <div className="col-lg-2 col-md-3 col-sm-12">
@@ -470,7 +527,7 @@ export class patient extends Component {
                           </select>
                         </div>
 
-                        <label className="col-md-3 col-lg-2 col-sm-12">
+                        <label className="col-md-3 col-lg-4 col-sm-12">
                           Allow SMS:
                         </label>
                         <div className="col-lg-2 col-md-3 col-sm-12">
@@ -486,7 +543,7 @@ export class patient extends Component {
                         </div>
                       </div>
                       <div className="row">
-                        <label className="col-md-3 col-lg-2 col-sm-12">
+                        <label className="col-md-3 col-lg-4 col-sm-12">
                           Allow Email:
                         </label>
                         <div className="col-lg-2 col-md-3 col-sm-12">
@@ -500,7 +557,7 @@ export class patient extends Component {
                             <option value={2}>YES</option>
                           </select>
                         </div>
-                        <label className="col-md-3 col-lg-2 col-sm-12">
+                        <label className="col-md-3 col-lg-4 col-sm-12">
                           Allow Patient Portal:
                         </label>
                         <div className="col-lg-2 col-md-3 col-sm-12">
@@ -516,7 +573,7 @@ export class patient extends Component {
                         </div>
                       </div>
                       <div className="row">
-                        <label className="col-md-3 col-lg-2 col-sm-12">
+                        <label className="col-md-3 col-lg-4 col-sm-12">
                           Immunization Registry Status:
                         </label>
                         <div className="col-lg-2 col-md-3 col-sm-12">
@@ -541,7 +598,7 @@ export class patient extends Component {
                           </select>
                         </div>
 
-                        <label className="col-md-3 col-lg-2 col-sm-12">
+                        <label className="col-md-3 col-lg-4 col-sm-12">
                           Immunization Registry Status Effective Date:
                         </label>
                         <div class="form-group col-lg-2 col-md-3 col-sm-12">
@@ -554,11 +611,11 @@ export class patient extends Component {
                         </div>
                       </div>
                       <div className="row">
-                        <label className="col-md-3 col-lg-2 col-sm-12">
+                        <label className="col-md-3 col-lg-4 col-sm-12">
                           Care Team (Provider):
                         </label>
                         <div className=" col-lg-2 col-md-3 col-sm-12">
-                        <input
+                          <input
                             type="text"
                             class="form-control"
                             id="formGroupExampleInput2"
@@ -566,11 +623,11 @@ export class patient extends Component {
                           />
                         </div>
 
-                        <label className="col-md-3 col-lg-2 col-sm-12">
+                        <label className="col-md-3 col-lg-4 col-sm-12">
                           Care Team (Facility):
                         </label>
                         <div className="col-lg-2 col-md-3 col-sm-12">
-                        <input
+                          <input
                             type="text"
                             class="form-control"
                             id="formGroupExampleInput2"
@@ -579,7 +636,7 @@ export class patient extends Component {
                         </div>
                       </div>
                       <div className="row">
-                        <label className="col-md-3 col-lg-2 col-sm-12">
+                        <label className="col-md-3 col-lg-4 col-sm-12">
                           Care Team Status:
                         </label>
                         <div className="col-lg-2 col-md-3 col-sm-12">
@@ -606,7 +663,7 @@ export class patient extends Component {
                       aria-expanded="false"
                       aria-controls="collapseThree"
                     >
-                   Employer
+                      Employer
                     </button>
                   </h2>
                   <div
@@ -617,7 +674,7 @@ export class patient extends Component {
                   >
                     <div class="accordion-body">
                       <div className="row">
-                        <label className="col-md-3 col-lg-2 col-sm-12">
+                        <label className="col-md-3 col-lg-4 col-sm-12">
                           Occupation:
                         </label>
                         <div className="col-lg-2 col-md-3 col-sm-12 ">
@@ -631,7 +688,7 @@ export class patient extends Component {
                             <option value={2}>""</option>
                           </select>
                         </div>
-                        <label className="col-md-3 col-lg-2 col-sm-12">
+                        <label className="col-md-3 col-lg-4 col-sm-12">
                           Employer Name:
                         </label>
                         <div class="form-group col-lg-2 col-md-3 col-sm-12">
@@ -642,10 +699,9 @@ export class patient extends Component {
                             placeholder=""
                           />
                         </div>
-                        
                       </div>
                       <div className="row">
-                      <label className="col-md-3 col-lg-2 col-sm-12">
+                        <label className="col-md-3 col-lg-4 col-sm-12">
                           Employer Address:
                         </label>
                         <div class="form-group col-lg-2 col-md-3 col-sm-12">
@@ -656,8 +712,8 @@ export class patient extends Component {
                             placeholder=""
                           />
                         </div>
-                        <label className="col-md-3 col-lg-2 col-sm-12">
-                        Employer Address Line 2:
+                        <label className="col-md-3 col-lg-4 col-sm-12">
+                          Employer Address Line 2:
                         </label>
                         <div class="form-group col-lg-2 col-md-3 col-sm-12">
                           <input
@@ -667,10 +723,9 @@ export class patient extends Component {
                             placeholder=""
                           />
                         </div>
-                       
                       </div>
                       <div className="row">
-                      <label className="col-md-3 col-lg-2 col-sm-12">
+                        <label className="col-md-3 col-lg-4 col-sm-12">
                           City:
                         </label>
                         <div class="form-group col-lg-2 col-md-3 col-sm-12">
@@ -681,8 +736,8 @@ export class patient extends Component {
                             placeholder=""
                           />
                         </div>
-                        <label className="col-md-3 col-lg-2 col-sm-12">
-                        State:
+                        <label className="col-md-3 col-lg-4 col-sm-12">
+                          State:
                         </label>
                         <div className="col-lg-2 col-md-3 col-sm-12 ">
                           <select
@@ -695,11 +750,10 @@ export class patient extends Component {
                             <option value={2}>""</option>
                           </select>
                         </div>
-                       
                       </div>
                       <div className="row">
-                      <label className="col-md-3 col-lg-2 col-sm-12">
-                         Postal Code:
+                        <label className="col-md-3 col-lg-4 col-sm-12">
+                          Postal Code:
                         </label>
                         <div class="form-group col-lg-2 col-md-3 col-sm-12">
                           <input
@@ -709,40 +763,8 @@ export class patient extends Component {
                             placeholder=""
                           />
                         </div>
-                        <label className="col-md-3 col-lg-2 col-sm-12">
-                        Country:
-                        </label>
-                        <div className="col-lg-2 col-md-3 col-sm-12 ">
-                          <select
-                            className="form-select col-lg-4"
-                            aria-label="Default select example"
-                          >
-                            <option selected>Select</option>
-                            <option value={1}>""</option>
-                            <option value={2}>""</option>
-                            <option value={2}>""</option>
-                          </select>
-                        </div>
-                       
-                      </div>
-                      <div className="row">
-                      
-                        <label className="col-md-3 col-lg-2 col-sm-12">
-                        Industry:
-                        </label>
-                        <div className="col-lg-2 col-md-3 col-sm-12 ">
-                          <select
-                            className="form-select col-lg-4"
-                            aria-label="Default select example"
-                          >
-                            <option selected>Select</option>
-                            <option value={1}>""</option>
-                            <option value={2}>""</option>
-                            <option value={2}>""</option>
-                          </select>
-                        </div>
-                        <label className="col-md-3 col-lg-2 col-sm-12">
-                        Religion:
+                        <label className="col-md-3 col-lg-4 col-sm-12">
+                          Country:
                         </label>
                         <div className="col-lg-2 col-md-3 col-sm-12 ">
                           <select
@@ -757,9 +779,8 @@ export class patient extends Component {
                         </div>
                       </div>
                       <div className="row">
-                      
-                        <label className="col-md-3 col-lg-2 col-sm-12">
-                       Non- Religion:
+                        <label className="col-md-3 col-lg-4 col-sm-12">
+                          Industry:
                         </label>
                         <div className="col-lg-2 col-md-3 col-sm-12 ">
                           <select
@@ -772,7 +793,36 @@ export class patient extends Component {
                             <option value={2}>""</option>
                           </select>
                         </div>
-                       
+                        <label className="col-md-3 col-lg-4 col-sm-12">
+                          Religion:
+                        </label>
+                        <div className="col-lg-2 col-md-3 col-sm-12 ">
+                          <select
+                            className="form-select col-lg-4"
+                            aria-label="Default select example"
+                          >
+                            <option selected>Select</option>
+                            <option value={1}>""</option>
+                            <option value={2}>""</option>
+                            <option value={2}>""</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div className="row">
+                        <label className="col-md-3 col-lg-4 col-sm-12">
+                          Non- Religion:
+                        </label>
+                        <div className="col-lg-2 col-md-3 col-sm-12 ">
+                          <select
+                            className="form-select col-lg-4"
+                            aria-label="Default select example"
+                          >
+                            <option selected>Select</option>
+                            <option value={1}>""</option>
+                            <option value={2}>""</option>
+                            <option value={2}>""</option>
+                          </select>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -934,7 +984,7 @@ export class patient extends Component {
                         </div>
                         </div>
                         </div> */}
-                        {/* <div class="accordion-item">
+                {/* <div class="accordion-item">
                   <h2 class="accordion-header" id="headingSeven">
                     <button
                       class="accordion-button collapsed"
@@ -1134,17 +1184,21 @@ export class patient extends Component {
                         </div> */}
               </div>
             </div>
-            <div className="container p-2 m-2" >
-                <center>
-                <button type="button" class="btn btn-success text-center col-2 p-1 m-1">Create New Patient</button>
-                </center>
-                
-                   </div>
+            <div className="container p-2 m-2">
+              <center>
+                <button
+                  type="button"
+                  class="btn btn-success text-center col-2 p-1 m-1"
+                >
+                  Create New Patient
+                </button>
+              </center>
+            </div>
 
             {/* Modal Custom Settings*/}
-           </div>
-           </div>
-           </div>
+          </div>
+        </div>
+      </div>
     );
   }
 }

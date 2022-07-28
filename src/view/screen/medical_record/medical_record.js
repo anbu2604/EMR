@@ -9,15 +9,15 @@ function Medical_record() {
   const temperature = [
     {
       value: 0,
-      label: "0°C",
+      label: "0°",
     },
        {
       value: 50,
-      label: "50°C",
+      label: "50°",
     },
        {
       value: 100,
-      label: "100°C",
+      label: "100°",
     },
   ];
   const [val, setVal] = useState([0, 40]);
@@ -74,7 +74,7 @@ function Medical_record() {
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="./eye_module">
+                    <a class="nav-link" href="./documents">
                       Documents
                     </a>
                   </li>
@@ -84,11 +84,7 @@ function Medical_record() {
                     </a>
                   </li>
 
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">
-                      Ledger
-                    </a>
-                  </li>
+                 
                 </ul>
               </div>
             </div>
@@ -1120,32 +1116,7 @@ function Medical_record() {
                     </div>
                   </div>
                 </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingSeven">
-                    <button
-                      class="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapseSeven"
-                      aria-expanded="false"
-                      aria-controls="collapseThree"
-                    >
-                      Amendments
-                    </button>
-                  </h2>
-                  <div
-                    id="collapseSeven"
-                    class="accordion-collapse collapse"
-                    aria-labelledby="headingSeven"
-                    data-bs-parent="#accordionExample"
-                  >
-                    <div class="accordion-body">
-                      <div className="row">
-                        <label>None</label>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="headingEight">
                     <button
@@ -1231,20 +1202,32 @@ function Medical_record() {
                       </div>
 
                       <div className="row">
-                        <label className="col-md-3 col-lg-2 col-sm-12 fw-bold p-1">
+                        <label className="col-md-3 col-lg-3 col-sm-12 fw-bold p-1">
                           Temperature:
                         </label>
                         <br></br>
-                        <p className="col-md-3 col-lg-4 col-sm-12 text-center" style={{ border:"2px solid black", 'borderRadius': "10px"}}>
-                        <Slider  value={val} onChange={updateRange} marks={temperature} />
+                        <p className="col-md-3 col-lg-3 col-sm-12">
+                          <input
+                            type="range"
+                            class="form-range primary"
+                            min="0"
+                            max="5"
+                            id="customRange2"
+                          />
                         </p>
-                        <label className="col-md-3 col-lg-2 col-sm-12 fw-bold">
+                        <label className="col-md-3 col-lg-3 col-sm-12 fw-bold">
                           BMI:{" "}
                         </label>
                         <br></br>
-                        <p className="col-md-3 col-lg-4 col-sm-12" style={{ border:"2px solid black", 'borderRadius': "10px"}}>
-                  
-                        <Slider value={value} onChange={updateValue} marks={bmi} /></p>
+                        <p className="col-md-3 col-lg-3 col-sm-12">
+                          <input
+                            type="range"
+                            class="form-range primary"
+                            min="0"
+                            max="5"
+                            id="customRange2"
+                          />
+                        </p>                  
                       </div>
                       <div className="row">
                         <label className="col-md-3 col-lg-3 col-sm-12 fw-bold">

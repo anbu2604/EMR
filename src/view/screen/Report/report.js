@@ -11,7 +11,9 @@ function Report() {
   <div className="col-lg-3">
     <Sidebar></Sidebar>
   </div>
-  <div className="col-lg-7">
+  <div className="col-lg-9">
+    <Admin></Admin>
+  <div className="col-lg-11">
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
               <div class="collapse navbar-collapse" id="navbarNav">
@@ -36,7 +38,7 @@ function Report() {
                     </a>
                   </li>
                   <li class="nav-item">
-                  <a class="nav-link" href="./eye_module">
+                  <a class="nav-link" href="./documents">
                       Documents
                     </a>
                   </li>
@@ -46,11 +48,7 @@ function Report() {
                     </a>
                   </li>
                  
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">
-                      Ledger
-                    </a>
-                  </li>
+                
                  
                 </ul>
               </div>
@@ -240,26 +238,15 @@ function Report() {
     </div>
     </div>
     <hr></hr>
-    <div className="row">
-    <label className="col-lg-2 fw-bold">Documents:</label>
-    </div>
-    <div className="row ">
-   <div className="button1 col-3">
-<button className="btn btn-info"> <i class="icofont-tick-mark p-1 m-1"></i>Generate Report</button>
-    </div>
-    <div className="button2 col-3">
-    <button className="btn btn-info"> <i class="icofont-download p-1 m-1"></i>Download PDF</button>
-
-    </div>
+   
     </div>
     <hr></hr>
   </div>
  
 </div>
-<div className="col-lg-2">
-    <Admin></Admin>
+
   </div>
-</div>
+
          
   );
 }

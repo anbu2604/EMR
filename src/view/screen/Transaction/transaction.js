@@ -39,7 +39,7 @@ function Transaction() {
                     </a>
                   </li>
                   <li class="nav-item">
-                  <a class="nav-link" href="./eye_module">
+                  <a class="nav-link" href="./documents">
                       Documents
                     </a>
                   </li>
@@ -49,11 +49,7 @@ function Transaction() {
                     </a>
                   </li>
                  
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">
-                      Ledger
-                    </a>
-                  </li>
+                 
                  
                 </ul>
               </div>
@@ -61,7 +57,7 @@ function Transaction() {
           </nav>
 
           <div className="row col-12 ">
-            <div className="col-lg-7">
+            <div className="col-lg-8">
               <ButtonGroup size="lg" className="mb-2 col-lg-12">
                 <Button>
                  
@@ -70,7 +66,7 @@ function Transaction() {
                 <Button><i class="icofont-printer p-1 m-1"></i>View/Print Blank Referral Form</Button>
               </ButtonGroup>
             </div>
-            <div className="col-lg-4">
+            <div className="col-lg-3">
               <h4 className="col-4 float-end fw-bold"> Transactions</h4>
             </div>
           </div>

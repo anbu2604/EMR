@@ -56,6 +56,8 @@ export class register extends Component {
       <div className="col-lg-3">
         <Sidebar></Sidebar>
       </div>
+      <div className='col-lg-9'>
+         <Admin></Admin>
       <div className="col-lg-7"> 
         
           {/* Body: Body */}
@@ -126,8 +128,8 @@ export class register extends Component {
             </div>
           </div>
          </div>
-         <div className='col-lg-2'>
-         <Admin></Admin></div>
+        
+         </div>
                </div>
     )
   }

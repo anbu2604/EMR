@@ -7,7 +7,9 @@ function Other() {
       <div className="col-lg-3">
         <Sidebar></Sidebar>
       </div>
-      <div className="col-lg-7">
+      <div className="col-lg-9">
+        <Admin></Admin>
+      <div className="col-lg-10">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
           <div class="container-fluid">
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -32,7 +34,7 @@ function Other() {
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="./eye_module">
+                  <a class="nav-link" href="./documents">
                     Documents
                   </a>
                 </li>
@@ -42,11 +44,7 @@ function Other() {
                   </a>
                 </li>
 
-                <li class="nav-item">
-                  <a class="nav-link" href="./ledger">
-                    Ledger
-                  </a>
-                </li>
+             
               </ul>
             </div>
           </div>
@@ -99,8 +97,7 @@ function Other() {
           </div>
         </div>
       </div>
-      <div className="col-lg-2">
-        <Admin></Admin>
+   
       </div>
     </div>
   );
