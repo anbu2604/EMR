@@ -6,7 +6,7 @@ function Sidebar() {
         {/* sidebar */}
         <div className="sidebar px-4 py-4 py-md-5 me-0">
           <div className="d-flex flex-column h-100">
-            <a href="./dashboard" className="mb-0 brand-icon">
+            <a href="./ui" className="mb-0 brand-icon">
               <span className="logo-icon">
                 <i className="icofont-heart-beat fs-2" />
               </span>
@@ -14,7 +14,7 @@ function Sidebar() {
             </a>
             {/* Menu: main ul */}
             <ul className="menu-list flex-grow-1 mt-3">
-            <li><a class="m-link active" href="./dashborad"><i class="icofont-ui-home fs-5"></i> <span>Dashboard</span></a></li>
+            <li><a class="m-link active" href="./ui"><i class="icofont-ui-home fs-5"></i> <span>Dashboard</span></a></li>
               <li>
                 <a class="m-link " href="./role_master">
                 <i class="icofont-user-alt-1"></i> <span>Role Master</span>
@@ -52,7 +52,7 @@ function Sidebar() {
                   <li><a className="ms-link" href="patient-invoices.html">Patient Invoices</a></li>
                 </ul>
               </li>
-              <li><a class="m-link" href="./cal"><i class="icofont-stretcher fs-5"></i> <span>Schedule</span></a></li>
+              <li><a class="m-link" href="./schedule"><i class="icofont-stretcher fs-5"></i> <span>Schedule</span></a></li>
               
             </ul>
             {/* Menu: menu collepce btn */}
