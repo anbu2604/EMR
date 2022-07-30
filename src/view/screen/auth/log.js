@@ -19,13 +19,18 @@ export class login extends Component {
  }
   async handlesubmit(){
     try{
-      let user = await instance.post('/login',{
+      const data ={
         "username": this.state.username,
         "password": this.state.password
-    })
-    console.log("datas",user)
-    this.setState({ user });
-    }catch(error){
+      }
+      let user = await instance.post('/login',data)
+      console.log("datas",user.data.accessToken)
+      localStorage.setItem('accessToken',user.data.accessToken)
+      localStorage.setItem('refreshToken',user.data.refreshToken)
+      localStorage.setItem('token',user.data.accessToken)
+      this.setState({ user });
+    }catch(err){
+      const error = err.response.data.errors;
       console.log("error",error)
       this.setState({ error });
     }
@@ -60,7 +65,7 @@ export class login extends Component {
                   {/* Form */}
                   {error && <div className="mb-2">
                       <div className="alert alert-danger fade show" role="alert">
-                        {error.message}
+                        {error}
                       </div>
                     </div>}
                   {user && (

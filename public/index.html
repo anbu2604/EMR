@@ -67,5 +67,16 @@
     <!-- <script src="js/template.js"></script> -->
     <script src="js/page/index.js"></script>
 <script src="js/page/schedule.js"></script>
+<script>
+  $(document).ready(function () {
+ 
+ window.setTimeout(function() {
+     $(".alert").fadeTo(1000, 0).slideUp(1000, function(){
+         $(this).remove(); 
+     });
+ }, 5000);
+  
+ });
+</script>
   </body>
 </html>

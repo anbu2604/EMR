@@ -33,7 +33,6 @@ function MainNavigator() {
   return (
     <div className="App">
       <Routes>
-     
         <Route path="/" element={<Log />} />
         <Route path="/register" element={<Register/>} />
         <Route path="/ui" element={<Ui />} />

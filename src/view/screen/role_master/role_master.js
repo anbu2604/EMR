@@ -1,9 +1,42 @@
 import React, { Component } from "react";
 import Sidebar from "../../components/sidebar";
 import Admin from "../../components/admin";
+import { instance } from '../../../utils/axios';
+import moment from 'moment';
 
-function Role_Master() {
-  return (
+
+export class Role_Master extends Component {
+  constructor(props) {
+      super(props);
+      this.state = {
+          customers: []
+      }
+  }
+  
+  componentDidMount= async () => {
+    try{
+        const config ={
+          headers : {
+            Authorization: 'Bearer ' + localStorage.getItem('accessToken') 
+          }
+      }
+        
+      let result = await instance.get('/roles', config)
+      console.log("datas",result.data.roles)
+      this.setState({ customers: result.data.roles });
+      
+      }catch(err){
+        const error = err.response.data.errors;
+        console.log("errors",error)
+        this.setState({ error });
+      }
+      
+  }
+
+  render() {
+    let { user, error } = this.state;
+    console.log("errors222",error)
+    return (
     <div className="row">
       <div className="col-lg-3">
         <Sidebar></Sidebar>
@@ -66,91 +99,27 @@ function Role_Master() {
                             <tr>
                               <th scope="col-2">Role ID</th>
                               <th scope="col-9">Role Name</th>
-                              <th scope="col-9">Reporting Role</th>
+                              <th scope="col-9">Created At</th>
                               <th scope="col-9">Status </th>
                               <th scope="col-9">Action </th>
                             </tr>
                           </thead>
-                          <tbody className="text-center">
                           
-                            <tr>
-                              <th scope="row">1</th>
-                              <td>Admin</td>
-                              <td>Super Admin</td>
-                              <td><button type="button" class="btn btn-success">Active</button>
-                              </td>
-                              <td>
-                              <a href="./permissions"> <i class="icofont-edit p-1 m-1"></i></a>
-                              <i class="icofont-ui-delete"></i>
-                              </td>
-                            </tr>
-                            <tr>
-                              <th scope="row">2</th>
-                              <td>Super Admin</td>
-                              <td>-</td>
-                              <td><button type="button" class="btn btn-success">Active</button>
-</td>
-                              <td>
-                              <a href="./permissions"> <i class="icofont-edit p-1 m-1"></i></a>
-                              <i class="icofont-ui-delete"></i>
-                              </td>
-                            </tr>
-                            <tr>
-                              <th scope="row">3</th>
-                              <td>Physician</td>
-                              <td>Admin</td>
-                              <td><button type="button" class="btn btn-success">Active</button>
-</td>
-                              <td>
-                              <a href="./permissions"> <i class="icofont-edit p-1 m-1"></i></a>
-                              <i class="icofont-ui-delete"></i>
-                              </td>
-                            </tr>
-                            <tr>
-                              <th scope="row">4</th>
-                              <td>Clinician</td>
-                              <td>Physician</td>
-                              <td><button type="button" class="btn btn-success">Active</button>
-</td>
-                              <td>
-                              <a href="./permissions"> <i class="icofont-edit p-1 m-1"></i></a>
-                              <i class="icofont-ui-delete"></i>
-                              </td>
-                            </tr>
-                            <tr>
-                              <th scope="row">5</th>
-                              <td>Accountant</td>
-                              <td>Admin</td>
-                              <td><button type="button" class="btn btn-success">Active</button>
-</td>
-                              <td>
-                              <a href="./permissions"> <i class="icofont-edit p-1 m-1"></i></a>
-                              <i class="icofont-ui-delete"></i>
-                              </td>
-                            </tr>
-
-                            <tr>
-                              <th scope="row">6</th>
-                              <td>Doctor</td>
-                              <td>Admin</td>
-                              <td><button type="button" class="btn btn-success">Active</button>
-</td>
-                              <td>
-                              <a href="./permissions"> <i class="icofont-edit p-1 m-1"></i></a>
-                              <i class="icofont-ui-delete"></i>
-                              </td>
-                            </tr>
-                            <tr>
-                              <th scope="row">7</th>
-                              <td>Patient</td>
-                              <td>Doctor</td>
-                              <td><button type="button" class="btn btn-success">Active</button>
-</td>
-                              <td>
-                              <a href="./permissions"> <i class="icofont-edit p-1 m-1"></i></a>
-                              <i class="icofont-ui-delete"></i>
-                              </td>
-                            </tr>
+                          <tbody className="text-center">
+                              {this.state.customers.map(customer =>
+                                  <tr>
+                                      <td>{customer.id}</td>
+                                      <td>{customer.name}</td>
+                                      <td>{moment(customer.createdAt).format('DD/MM/YYYY hh:mma')}</td>
+                                      {customer.isActive && (<td><button type="button" className="btn btn-success">Active</button></td>)}
+                                      {customer.isActive =='false' && (<td><button type="button" className="btn btn-success">Active</button></td>)}
+                                      
+                                      <td>
+                                        <a href="./permissions"> <i className="icofont-edit p-1 m-1"></i></a>
+                                        <i className="icofont-ui-delete"></i>
+                                      </td>
+                                  </tr>
+                              )}
                           </tbody>
                         </table>
                       </form>
@@ -166,7 +135,9 @@ function Role_Master() {
         
          </div>
     </div>
-  );
+
+)
+}
 }
 
 export default Role_Master;

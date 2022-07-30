@@ -1,6 +1,27 @@
 import React from "react";
+import Swal from 'sweetalert2';
+import { Navigate } from "react-router-dom";
 
 const Admin = () => {
+  const handleSubmit = async () => {
+  Swal.fire({
+    icon: 'warning',
+    title: 'Confirm Logout?',
+    text: 'Are you sure you want to logout?',
+    showCancelButton: true,
+    confirmButtonText: 'Logout',
+    cancelButtonText: 'Stay Connected'
+  }).then((result) => {
+    if (result.isConfirmed) {
+      localStorage.removeItem('accessToken');
+      localStorage.removeItem('refreshToken');
+      localStorage.removeItem('token');
+      window.location.href = '/';
+      <Navigate to="/logout" replace={true} />
+    }
+  });
+}
+
   return (
     <div>
       <div className="header">
@@ -49,10 +70,12 @@ const Admin = () => {
                       </div>
                     </div>
                     <div className="list-group m-2 ">
-                      <a
-                        href="/"
-                        className="list-group-item list-group-item-action border-0 "
-                      >
+                        <a
+                            data-bs-toggle="modal"
+                            data-bs-target="#logoutmodal"
+                            className="dropdown-item py-2 group-item list-group-item-action border-0"
+                            onClick={() => handleSubmit()}
+                          >
                         <i className="icofont-logout fs-6 me-3" />
                         Signout
                       </a>
