@@ -54,7 +54,7 @@ class Vitals extends React.Component {
                 <Slider
                     ref={(n) => (this.sliderNode = n)}
                     min={1}
-                    max={100}
+                    max={150}
                     value={experience}
                     onChange={this.handleOnChange}
                     onChangeStart={() => {this.setState({dragging: true})}}
@@ -74,7 +74,7 @@ class Vitals extends React.Component {
                 <Slider
                     ref={(n) => (this.sliderNode = n)}
                     min={1}
-                    max={100}
+                    max={200}
                     value={experience}
                     onChange={this.handleOnChange}
                     onChangeStart={() => {this.setState({dragging: true})}}
