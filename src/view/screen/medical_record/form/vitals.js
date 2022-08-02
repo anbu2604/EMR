@@ -1,27 +1,38 @@
-import React from "react";
+import * as React from "react";
+import { render } from "react-dom";
 import Sidebar from "../../../components/sidebar";
 import Admin from "../../../components/admin";
-import "./vitals.css";
-import { useState, useEffect } from "react";
+import Slider from 'react-rangeslider'
+import 'react-rangeslider/lib/index.css'
+import "./vitals.css"
+const styles = {
+  fontFamily: "sans-serif",
+  textAlign: "center"
+};
 
-function Vitals() {
-  const [value, onChange] = useState(0);
-  const [value1, onChanges] = useState(0);
-  const [value2, onChanged] = useState(0);
-  const [value3, onChangesed] = useState(0);
-
-  useEffect(() => {
-    const ele = document.querySelector(".buble");
-    if (ele) {
-      ele.style.left = `${Number(value / 1)}px`;
-     
+class Vitals extends React.Component {
+    constructor(props, context) {
+        super(props, context)
+        this.state = {
+            experience: 0,
+            dragging: false
+        }
     }
-   
-  
-  });
- 
-  return (
-    <div className="row">
+
+    handleOnChange = (value) => {
+        this.setState({
+            experience: value
+        })
+    }
+
+    sliderNode = null
+
+    render() {
+        let { experience } = this.state
+
+        return (
+           
+<div className="row">
       <div className="col-lg-3">
         <Sidebar></Sidebar>
       </div>
@@ -36,35 +47,41 @@ function Vitals() {
               </label>
               <br></br>
               <p className="col-md-3 col-lg-3 col-sm-12">
-                <div className="slider-parent">
-                  <input
-                    type="range"
-                    min="1"
-                    max="500"
-                    value={value}
-                    onChange={({ target: { value: radius } }) => {
-                      onChange(radius);
-                    }}
-                  />
-                  <div className="buble">{value}</div>
-                </div>
+              <div 
+                
+                onMouseEnter={() => { this.sliderNode.setState({ active: true }) }}
+                onMouseLeave={() => { this.sliderNode.setState({ active: this.state.dragging }) }}>
+                <Slider
+                    ref={(n) => (this.sliderNode = n)}
+                    min={1}
+                    max={100}
+                    value={experience}
+                    onChange={this.handleOnChange}
+                    onChangeStart={() => {this.setState({dragging: true})}}
+                    onChangeComplete={() => {this.setState({dragging: false})}}
+                   
+                />
+            </div>
               </p>
               <label className="col-md-3 col-lg-3 col-sm-12 fw-bold">
                 Height:
               </label>
               <p className="col-md-3 col-lg-3 col-sm-12">
-              <div className="slider-parent">
-                  <input
-                    type="range"
-                    min="1"
-                    max="500"
-                    value1={value}
-                    onChange={({ target: { value: radius } }) => {
-                      onChanges(radius);
-                    }}
-                  />
-                  <div className="buble">{value1}</div>
-                </div>
+              <div 
+                
+                onMouseEnter={() => { this.sliderNode.setState({ active: true }) }}
+                onMouseLeave={() => { this.sliderNode.setState({ active: this.state.dragging }) }}>
+                <Slider
+                    ref={(n) => (this.sliderNode = n)}
+                    min={1}
+                    max={100}
+                    value={experience}
+                    onChange={this.handleOnChange}
+                    onChangeStart={() => {this.setState({dragging: true})}}
+                    onChangeComplete={() => {this.setState({dragging: false})}}
+                   
+                />
+            </div>
               </p>
             </div>
             <div className="row">
@@ -73,36 +90,42 @@ function Vitals() {
               </label>
               <br></br>
               <p className="col-md-3 col-lg-3 col-sm-12">
-              <div className="slider-parent">
-                  <input
-                    type="range"
-                    min="1"
-                    max="500"
-                    value1={value}
-                    onChange={({ target: { value: radius } }) => {
-                      onChanged(radius);
-                    }}
-                  />
-                  <div className="buble">{value2}</div>
-                </div>
+              <div 
+                
+                onMouseEnter={() => { this.sliderNode.setState({ active: true }) }}
+                onMouseLeave={() => { this.sliderNode.setState({ active: this.state.dragging }) }}>
+                <Slider
+                    ref={(n) => (this.sliderNode = n)}
+                    min={1}
+                    max={100}
+                    value={experience}
+                    onChange={this.handleOnChange}
+                    onChangeStart={() => {this.setState({dragging: true})}}
+                    onChangeComplete={() => {this.setState({dragging: false})}}
+                   
+                />
+            </div>
               </p>
               <label className="col-md-3 col-lg-3 col-sm-12 fw-bold">
                 BMI:{" "}
               </label>
               <br></br>
               <p className="col-md-3 col-lg-3 col-sm-12">
-              <div className="slider-parent">
-                  <input
-                    type="range"
-                    min="1"
-                    max="500"
-                    value1={value}
-                    onChange={({ target: { value: radius } }) => {
-                      onChangesed(radius);
-                    }}
-                  />
-                  <div className="buble">{value3}</div>
-                </div>
+              <div 
+                
+                onMouseEnter={() => { this.sliderNode.setState({ active: true }) }}
+                onMouseLeave={() => { this.sliderNode.setState({ active: this.state.dragging }) }}>
+                <Slider
+                    ref={(n) => (this.sliderNode = n)}
+                    min={1}
+                    max={100}
+                    value={experience}
+                    onChange={this.handleOnChange}
+                    onChangeStart={() => {this.setState({dragging: true})}}
+                    onChangeComplete={() => {this.setState({dragging: false})}}
+                   
+                />
+            </div>
               </p>
             </div>
             <div className="row">
@@ -211,7 +234,17 @@ function Vitals() {
         </div>
       </div>
     </div>
-  );
+
+
+
+
+
+
+
+
+        )
+    }
 }
+
 
 export default Vitals;
