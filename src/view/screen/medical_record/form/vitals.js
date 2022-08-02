@@ -135,34 +135,17 @@ class Vitals extends React.Component {
               <br></br>
               <p className="col-md-3 col-lg-3 col-sm-12">
                 {" "}
-                <select
-                  className="form-select col-lg-4"
-                  aria-label="Default select example"
-                >
-                  <option selected>Select</option>
-                  <option value={1}>Oral</option>
-                  <option value={2}>Rectal</option>
-                  <option value={3}>Axillary</option>
-                  <option value={4}>Tympanic</option>
-                  <option value={5}>Temporal artery</option>
-                </select>
+                <label className="col-md-3 col-lg-3 col-sm-12 ">
+              Oral
+              </label>
               </p>
               <label className="col-md-3 col-lg-3 col-sm-12 fw-bold">
                 BMI Status:
               </label>
               <br></br>
               <p className="col-md-3 col-lg-3 col-sm-12">
-              <select
-                  className="form-select col-lg-4"
-                  aria-label="Default select example"
-                >
-                  <option selected>Select</option>
-                  <option value={1}>Underweight</option>
-                  <option value={2}>Healthy weight</option>
-                  <option value={3}> Overweight</option>
-                  <option value={4}>Obesity</option>
-                </select>
-              </p>
+              <label  className="col-md-3 col-lg-6 col-sm-12 ">Over weight</label>
+               </p>
             </div>
 
             <div className="row">
@@ -170,17 +153,21 @@ class Vitals extends React.Component {
                 Respiration:{" "}
               </label>
               <br></br>
-              <p className="col-md-3 col-lg-3 col-sm-12">  <select
-                  className="form-select col-lg-4"
-                  aria-label="Default select example"
-                >
-                  <option selected>Select</option>
-                  <option value={1}>10 per min</option>
-                  <option value={2}>20 per min</option>
-                  <option value={3}> 30 per min</option>
-                  <option value={4}>40 per min</option>
-                  <option value={5}>50 per min</option>
-                </select></p>
+              <p className="col-md-3 col-lg-3 col-sm-12"> <div 
+                
+                onMouseEnter={() => { this.sliderNode.setState({ active: true }) }}
+                onMouseLeave={() => { this.sliderNode.setState({ active: this.state.dragging }) }}>
+                <Slider
+                    ref={(n) => (this.sliderNode = n)}
+                    min={1}
+                    max={100}
+                    value={experience}
+                    onChange={this.handleOnChange}
+                    onChangeStart={() => {this.setState({dragging: true})}}
+                    onChangeComplete={() => {this.setState({dragging: false})}}
+                   
+                />
+            </div></p>
               <label className="col-md-3 col-lg-3 col-sm-12 fw-bold">
                 Blood Pressure:
               </label>
@@ -197,37 +184,40 @@ class Vitals extends React.Component {
                 Pulse:
               </label>
               <br></br>
-              <p className="col-md-3 col-lg-3 col-sm-12">  <select
-                  className="form-select col-lg-4"
-                  aria-label="Default select example"
-                >
-                  <option selected>Select</option>
-                  <option value={1}>20 per min</option>
-                  <option value={2}>40 per min</option>
-                  <option value={3}> 60 per min</option>
-                  <option value={4}>80 per min</option>
-                  <option value={5}>100 per min</option>
-                </select></p>
+              <p className="col-md-3 col-lg-3 col-sm-12">  <div 
+                
+                onMouseEnter={() => { this.sliderNode.setState({ active: true }) }}
+                onMouseLeave={() => { this.sliderNode.setState({ active: this.state.dragging }) }}>
+                <Slider
+                    ref={(n) => (this.sliderNode = n)}
+                    min={1}
+                    max={100}
+                    value={experience}
+                    onChange={this.handleOnChange}
+                    onChangeStart={() => {this.setState({dragging: true})}}
+                    onChangeComplete={() => {this.setState({dragging: false})}}
+                   
+                />
+            </div></p>
               <label className="col-md-3 col-lg-3 col-sm-12 fw-bold">
                 Oxygen Saturation:{" "}
               </label>
               <br></br>
-              <p className="col-md-3 col-lg-3 col-sm-12"><select
-                  className="form-select col-lg-2"
-                  aria-label="Default select example"
-                >
-                  <option selected>Select</option>
-                  <option value={1}>10%</option>
-                  <option value={2}>20%</option>
-                  <option value={3}>30%</option>
-                  <option value={4}>40%</option>
-                  <option value={5}>50%</option>
-                  <option value={6}>60%</option>
-                  <option value={7}>70%</option>
-                  <option value={8}>80%</option>
-                  <option value={9}>90%</option>
-                  <option value={10}>100%</option>
-                </select></p>
+              <p className="col-md-3 col-lg-3 col-sm-12"> <div 
+                
+                onMouseEnter={() => { this.sliderNode.setState({ active: true }) }}
+                onMouseLeave={() => { this.sliderNode.setState({ active: this.state.dragging }) }}>
+                <Slider
+                    ref={(n) => (this.sliderNode = n)}
+                    min={1}
+                    max={100}
+                    value={experience}
+                    onChange={this.handleOnChange}
+                    onChangeStart={() => {this.setState({dragging: true})}}
+                    onChangeComplete={() => {this.setState({dragging: false})}}
+                   
+                />
+            </div></p>
             </div>
             <button className=" btn btn-primary col-lg-1">Save</button>
           </div>

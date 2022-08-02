@@ -1,8 +1,12 @@
 .vitals_detail{
   border: 2px solid #008BD0;
   border-radius: 10px;
-}
+  
 
+}
+.vitals_detail .row{
+  align-items: baseline;
+}
 .rangeslider {
   background: linear-gradient(to right, #892AFF 0%, #23B2EE 100%);
   display: flex;
