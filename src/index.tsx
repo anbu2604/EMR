@@ -6,7 +6,7 @@ import MainNavigator from './controller/MainNavigator';
 import { Provider } from 'react-redux';
 
 
-import store from './modal/redux/store';
+import store from './redux/store';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
