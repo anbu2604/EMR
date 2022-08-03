@@ -23,12 +23,12 @@ export class login extends Component {
         "username": this.state.username,
         "password": this.state.password
       }
-      let user = await instance.post('/login',data)
-      console.log("datas",user.data.accessToken)
-      localStorage.setItem('accessToken',user.data.accessToken)
-      localStorage.setItem('refreshToken',user.data.refreshToken)
-      localStorage.setItem('token',user.data.accessToken)
-      this.setState({ user });
+      // let user = await instance.post('/login',data)
+      // console.log("datas",user.data.accessToken)
+      // localStorage.setItem('accessToken',user.data.accessToken)
+      // localStorage.setItem('refreshToken',user.data.refreshToken)
+      // localStorage.setItem('token',user.data.accessToken)
+      // this.setState({ user });
     }catch(err){
       const error = err.response.data.errors;
       console.log("error",error)
