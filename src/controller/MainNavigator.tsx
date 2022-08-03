@@ -28,7 +28,7 @@ import Register from '../view/screen/auth/register';
 import Eye_module from "../view/screen/Documents/Eye_module";
 import Lab_report from "../view/screen/Documents/Lab_report";
 import MedicalRecord from "../view/screen/Documents/Medical_report";
-
+import Vitals from "../view/screen/medical_record/form/vitals";
 function MainNavigator() {
   return (
     <div className="App">
@@ -60,6 +60,7 @@ function MainNavigator() {
         <Route path="/documents" element={<Eye_module />} />    
         <Route path="/lab_report" element={<Lab_report />} />    
         <Route path="/medical_record" element={<MedicalRecord />} />    
+        <Route path="vitals" element={<Vitals/>}/>
       </Routes>
     </div>
   );

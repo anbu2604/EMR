@@ -3,8 +3,6 @@ import { Hospital } from "react-bootstrap-icons";
 import Sidebar from "../../components/sidebar";
 import Admin from "../../components/admin";
 import  { useState } from "react";
-import { Slider } from "@material-ui/core";
-
 function Medical_record() {
   const temperature = [
     {
@@ -1163,7 +1161,13 @@ function Medical_record() {
                     data-bs-parent="#accordionExample"
                   >
                     <div class="accordion-body">
-                      <div className="row">
+                    <div className="row float-end">
+                        <a href="./vitals">
+                          <i class="icofont-ui-edit "></i>
+                        </a>
+                      </div>
+                      <div className="row ">
+                      
                         <label className="col-md-3 col-lg-6 col-sm-12 fw-bold">
                           Most recent vitals from: 0000-00-00 00:00:00
                         </label>
@@ -1179,14 +1183,15 @@ function Medical_record() {
                         </label>
                         <br></br>
                         <p className="col-md-3 col-lg-3 col-sm-12">
-                          <input
+                        <input
                             type="range"
                             class="form-range primary"
                             min="0"
                             max="5"
                             id="customRange2"
                           />
-                        </p>
+     
+                          </p>
                         <label className="col-md-3 col-lg-3 col-sm-12 fw-bold">
                           Height:
                         </label>
