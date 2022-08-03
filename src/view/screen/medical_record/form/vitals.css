@@ -5,16 +5,50 @@
 
 }
 .vitals_detail .row{
-  align-items: baseline;
+  align-items: center;
 }
-.rangeslider {
-  background: linear-gradient(to right, #892AFF 0%, #23B2EE 100%);
-  display: flex;
+.weight{
+  background:linear-gradient(90deg, red 0%, yellow 32%, green 55%, yellow 78%, red 100%) ;
   align-content: stretch;
   height: 25px;
   border-radius: 8px 8px 0 0;
 }
-
+.height{
+  background:linear-gradient(90deg, red 0%, yellow 32%, green 55%, yellow 78%, red 100%) ;
+  align-content: stretch;
+  height: 25px;
+  border-radius: 8px 8px 0 0;
+}
+/* .temperature  {
+  background:linear-gradient(90deg, red 0%, yellow 32%, green 55%, yellow 78%, red 100%) ;
+  align-content: stretch;
+  height: 25px;
+  border-radius: 8px 8px 0 0;
+}
+.bmi{
+  background:linear-gradient(90deg, red 0%, yellow 32%, green 55%, yellow 78%, red 100%) ;
+  align-content: stretch;
+  height: 25px;
+  border-radius: 8px 8px 0 0;
+} */
+.respiration{
+  background:linear-gradient(90deg, red 0%, yellow 32%, green 40%, yellow 68%, red 100%) ;
+  align-content: stretch;
+  height: 25px;
+  border-radius: 8px 8px 0 0;
+}
+.pulse{
+  background:linear-gradient(90deg, red 0%, yellow 22%, green 65%, yellow 68%, red 100%) ;
+  align-content: stretch;
+  height: 25px;
+  border-radius: 8px 8px 0 0;
+}
+.oxygen{
+  background:linear-gradient(90deg, red 0%, yellow 22%, green 35%, yellow 48%, red 100%) ;
+  align-content: stretch;
+  height: 25px;
+  border-radius: 8px 8px 0 0;
+}
 .rangeslider::after {
   content: '';
   position: relative;
