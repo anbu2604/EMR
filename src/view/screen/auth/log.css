@@ -5,13 +5,13 @@ background-color:#008BD0;
 svg{
     height: 340px;
 }
-form{
+.formlg{
     width: 550px;
     padding: 60px;
     background-color: white;
    border-radius: 50px;
     border: 2px solid white;
-position: relative; 
+    position: relative; 
    display: inline-block;
 }
 .form-control{

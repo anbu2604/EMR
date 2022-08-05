@@ -1186,12 +1186,8 @@ export class patient extends Component {
             </div>
             <div className="container p-2 m-2">
               <center>
-                <button
-                  type="button"
-                  class="btn btn-success text-center col-2 p-1 m-1"
-                >
-                  Create New Patient
-                </button>
+              <button className=" btn btn-primary col-lg-1">Save</button>
+               
               </center>
             </div>
 

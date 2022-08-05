@@ -48,7 +48,7 @@ export class login extends Component {
             {user && (
               <Navigate to="/dashboard" replace={true} />
             )}
-        <form className=' m-5'>
+        <form className=' formlg m-5'>
           <div className='mb-4'>
             <img src="assets/images/logo.svg"/>
           </div>
