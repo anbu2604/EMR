@@ -17,7 +17,7 @@
   height: 25px;
   border-radius: 8px 8px 0 0;
 }
-.temperature  {
+/* .temperature  {
   background:linear-gradient(90deg, red 0%, yellow 32%, green 55%, yellow 78%, red 100%) ;
   align-content: stretch;
   height: 25px;
@@ -28,7 +28,7 @@
   align-content: stretch;
   height: 25px;
   border-radius: 8px 8px 0 0;
-}
+} */
 .respiration{
   background:linear-gradient(90deg, red 0%, yellow 32%, green 40%, yellow 68%, red 100%) ;
   align-content: stretch;
