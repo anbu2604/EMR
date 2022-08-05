@@ -1,6 +1,5 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-
 import '../utils/css/App.css';
 import Ui from '../view/screen/Ui'
 import Patient from '../view/screen/patient/patient';
@@ -29,6 +28,8 @@ import Eye_module from "../view/screen/Documents/Eye_module";
 import Lab_report from "../view/screen/Documents/Lab_report";
 import MedicalRecord from "../view/screen/Documents/Medical_report";
 import Vitals from "../view/screen/medical_record/form/vitals";
+import Schedules from "../view/screen/schedules/schedules";
+import Lab_test from "../view/screen/lab test/lab_test";
 function MainNavigator() {
   return (
     <div className="App">
@@ -60,7 +61,9 @@ function MainNavigator() {
         <Route path="/documents" element={<Eye_module />} />    
         <Route path="/lab_report" element={<Lab_report />} />    
         <Route path="/medical_record" element={<MedicalRecord />} />    
-        <Route path="vitals" element={<Vitals/>}/>
+        <Route path="/vitals" element={<Vitals/>}/>
+        <Route path="/schedules" element={<Schedules/>}/>
+        <Route path="/lab" element={<Lab_test/>}/>
       </Routes>
     </div>
   );
