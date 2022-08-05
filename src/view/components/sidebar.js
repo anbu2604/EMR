@@ -15,21 +15,17 @@ function Sidebar() {
             {/* Menu: main ul */}
             <ul className="menu-list flex-grow-1 mt-3">
             <li><a class="m-link active" href="./dashboard"><i class="icofont-ui-home fs-5"></i> <span>Dashboard</span></a></li>
-              <li>
-                <a class="m-link " href="./role_master">
-                <i class="icofont-user-alt-1"></i> <span>Role Master</span>
-                </a>
+            <li className="collapsed">
+                <a className="m-link" data-bs-toggle="collapse" data-bs-target="#menu-user" href="#">
+                  <i className="icofont-users fs-5" /><span>User Management</span> <span className="arrow icofont-rounded-down ms-auto text-end fs-5" /></a>
+                {/* Menu: Sub menu ul */}
+                <ul className="sub-menu collapse" id="menu-user">
+                  <li><a className="ms-link" href="./role_master">Role Master</a></li>
+                  <li><a className="ms-link" href="./access">Access Privilege</a></li>
+                  <li><a className="ms-link" href="./register">Add Users</a></li>
+                </ul>
               </li>
-              <li>
-                <a class="m-link " href="./access">
-                  <i class="icofont-ui-user"></i> <span>Access Privilege</span>
-                </a>
-              </li>
-              <li>
-                <a class="m-link " href="./register">
-                  <i class="icofont-user-alt-1"></i> <span>Registration</span>
-                </a>
-              </li>
+              
               <li className="collapsed">
                 <a className="m-link" data-bs-toggle="collapse" data-bs-target="#menu-Doctor" href="#">
                   <i className="icofont-doctor-alt fs-5" />  <span>Doctor</span> <span className="arrow icofont-rounded-down ms-auto text-end fs-5" /></a>
@@ -53,6 +49,7 @@ function Sidebar() {
                 </ul>
               </li>
               <li><a class="m-link" href="./schedule"><i class="icofont-stretcher fs-5"></i> <span>Schedule</span></a></li>
+              <li><a class="m-link" href="./vitals"><i class="icofont-heartbeat fs-5"></i> <span>Vitals</span></a></li>
               
             </ul>
             {/* Menu: menu collepce btn */}
