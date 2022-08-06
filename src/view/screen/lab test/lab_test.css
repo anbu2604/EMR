@@ -165,4 +165,58 @@
     transform: none;
     
   }
-  
+  .rangeslider_alt{
+    background: rgb(255, 102, 0);
+  }
+  .rangeslider_ast{
+    background: rgb(111, 0, 255);
+  }
+  .rangeslider_alp{
+    background: rgb(0, 255, 89);
+  }
+  .rangeslider_albumin{
+    background: rgb(0, 174, 255);
+  }
+  .rangeslider_total_protein{
+    background: rgb(255, 0, 183);
+  }
+  .rangeslider_bilirubin{
+    background: rgb(195, 255, 0);
+  }
+  .rangeslider_ggt{
+    background: rgb(0, 255, 247);
+  }
+  .rangeslider_ld{
+    background: rgb(120, 152, 133);
+  }
+  .rangeslider_pt{
+    background: rgb(153, 64, 198);
+  }
+  .rangeslider_cholesterol{
+    background: rgb(0, 174, 255);
+  }
+  .rangeslider_triglycerides{
+    background: rgb(255, 0, 183);
+  }
+  .rangeslider_hdl{
+    background: rgb(228, 99, 124);
+  }
+  .rangeslider_ldl{
+    background: rgb(111, 0, 255);
+  }
+  .rangeslider_hdl_ratio{
+    background: rgb(240, 185, 73);
+  }
+  .rangeslider_fasting{
+    background: rgb(0, 255, 89); 
+   }
+   .rangeslider_after_eat{
+    background: rgb(153, 64, 198);
+   }
+   .rangeslider_after_meal{
+    background: rgb(120, 152, 133);
+   }
+   .rangeslider_a1c{
+    background: rgb(255, 102, 0);
+   }
+
