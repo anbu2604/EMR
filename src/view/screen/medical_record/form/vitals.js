@@ -158,6 +158,7 @@ class Vitals extends React.Component {
                     <Slider
                        min={96.0}
                        max={103}
+                       step={0.5}
                         className={ 
                           card === 'temp' 
                             ? 'rangeslider_temp' 
