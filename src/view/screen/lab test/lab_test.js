@@ -178,11 +178,11 @@ class Lab_test extends React.Component {
                 <h5 className="fw-bold text-success">Liver Function</h5>
                 </div>
               <div className="row ">
-                <label className="col-md-3 col-lg-3 col-sm-12 fw-bold">
+                <label className="col-md-2 col-lg-2 col-sm-12 fw-bold">
                   ALT:
                 </label>
                 <br></br>
-                <p className="col-md-3 col-lg-3 col-sm-12">
+                <p className="col-md-4 col-lg-4 col-sm-12">
                   <div
                     onMouseEnter={() => {
                       this.sliderNode.setState({ active: true });
@@ -207,10 +207,10 @@ class Lab_test extends React.Component {
                     />
                   </div>
                 </p>
-                <label className="col-md-3 col-lg-3 col-sm-12 fw-bold">
+                <label className="col-md-2 col-lg-2 col-sm-12 fw-bold">
                   AST:
                 </label>
-                <p className="col-md-3 col-lg-3 col-sm-12">
+                <p className="col-md-4 col-lg-4 col-sm-12">
                   <div
                     onMouseEnter={() => {
                       this.sliderNode.setState({ active: true });
@@ -237,11 +237,11 @@ class Lab_test extends React.Component {
                 </p>               
               </div>
               <div className="row ">
-                <label className="col-md-3 col-lg-3 col-sm-12 fw-bold">
+                <label className="col-md-2 col-lg-2 col-sm-12 fw-bold">
                 ALP:
                 </label>
                 <br></br>
-                <p className="col-md-3 col-lg-3 col-sm-12">
+                <p className="col-md-4 col-lg-4 col-sm-12">
                   <div
                     onMouseEnter={() => {
                       this.sliderNode.setState({ active: true });
@@ -266,10 +266,10 @@ class Lab_test extends React.Component {
                     />
                   </div>
                 </p>
-                <label className="col-md-3 col-lg-3 col-sm-12 fw-bold">
+                <label className="col-md-2 col-lg-2 col-sm-12 fw-bold">
                 Albumin:
                 </label>
-                <p className="col-md-3 col-lg-3 col-sm-12">
+                <p className="col-md-4 col-lg-4 col-sm-12">
                   <div
                     onMouseEnter={() => {
                       this.sliderNode.setState({ active: true });
@@ -298,11 +298,11 @@ class Lab_test extends React.Component {
                 </p>               
               </div>
               <div className="row ">
-                <label className="col-md-3 col-lg-3 col-sm-12 fw-bold">
+                <label className="col-md-2 col-lg-2 col-sm-12 fw-bold">
                 Total protein:
                 </label>
                 <br></br>
-                <p className="col-md-3 col-lg-3 col-sm-12">
+                <p className="col-md-4 col-lg-4 col-sm-12">
                   <div
                     onMouseEnter={() => {
                       this.sliderNode.setState({ active: true });
@@ -329,10 +329,10 @@ class Lab_test extends React.Component {
                     />
                   </div>
                 </p>
-                <label className="col-md-3 col-lg-3 col-sm-12 fw-bold">
+                <label className="col-md-2 col-lg-2 col-sm-12 fw-bold">
                 Bilirubin:
                 </label>
-                <p className="col-md-3 col-lg-3 col-sm-12">
+                <p className="col-md-4 col-lg-4 col-sm-12">
                   <div
                     onMouseEnter={() => {
                       this.sliderNode.setState({ active: true });
@@ -361,11 +361,11 @@ class Lab_test extends React.Component {
                 </p>               
               </div>
               <div className="row ">
-                <label className="col-md-3 col-lg-3 col-sm-12 fw-bold">
+                <label className="col-md-2 col-lg-2 col-sm-12 fw-bold">
                 GGT:
                 </label>
                 <br></br>
-                <p className="col-md-3 col-lg-3 col-sm-12">
+                <p className="col-md-4 col-lg-4 col-sm-12">
                   <div
                     onMouseEnter={() => {
                       this.sliderNode.setState({ active: true });
@@ -390,10 +390,10 @@ class Lab_test extends React.Component {
                     />
                   </div>
                 </p>
-                <label className="col-md-3 col-lg-3 col-sm-12 fw-bold">
+                <label className="col-md-2 col-lg-2 col-sm-12 fw-bold">
                 LD:
                 </label>
-                <p className="col-md-3 col-lg-3 col-sm-12">
+                <p className="col-md-4 col-lg-4 col-sm-12">
                   <div
                     onMouseEnter={() => {
                       this.sliderNode.setState({ active: true });
@@ -420,11 +420,11 @@ class Lab_test extends React.Component {
                 </p>               
               </div>
               <div className="row ">
-                <label className="col-md-3 col-lg-3 col-sm-12 fw-bold">
+                <label className="col-md-2 col-lg-2 col-sm-12 fw-bold">
                 PT:
                 </label>
                 <br></br>
-                <p className="col-md-3 col-lg-3 col-sm-12">
+                <p className="col-md-4 col-lg-4 col-sm-12">
                   <div
                     onMouseEnter={() => {
                       this.sliderNode.setState({ active: true });
@@ -457,11 +457,11 @@ class Lab_test extends React.Component {
                 <h5 className="fw-bold text-success"> Lipid Profile</h5>
                 </div>
                 <div className="row ">
-                <label className="col-md-3 col-lg-3 col-sm-12 fw-bold">
+                <label className="col-md-2 col-lg-2 col-sm-12 fw-bold">
                 Cholesterol:
                 </label>
                 <br></br>
-                <p className="col-md-3 col-lg-3 col-sm-12">
+                <p className="col-md-4 col-lg-4 col-sm-12">
                   <div
                     onMouseEnter={() => {
                       this.sliderNode.setState({ active: true });
@@ -486,10 +486,10 @@ class Lab_test extends React.Component {
                     />
                   </div>
                 </p>
-                <label className="col-md-3 col-lg-3 col-sm-12 fw-bold">
+                <label className="col-md-2 col-lg-2 col-sm-12 fw-bold">
                 Triglycerides:
                 </label>
-                <p className="col-md-3 col-lg-3 col-sm-12">
+                <p className="col-md-4 col-lg-4 col-sm-12">
                   <div
                     onMouseEnter={() => {
                       this.sliderNode.setState({ active: true });
@@ -516,11 +516,11 @@ class Lab_test extends React.Component {
                 </p>               
               </div>
               <div className="row ">
-                <label className="col-md-3 col-lg-3 col-sm-12 fw-bold">
+                <label className="col-md-2 col-lg-2 col-sm-12 fw-bold">
                HDL Cholesterol:
                 </label>
                 <br></br>
-                <p className="col-md-3 col-lg-3 col-sm-12">
+                <p className="col-md-4 col-lg-4 col-sm-12">
                   <div
                     onMouseEnter={() => {
                       this.sliderNode.setState({ active: true });
@@ -545,10 +545,10 @@ class Lab_test extends React.Component {
                     />
                   </div>
                 </p>
-                <label className="col-md-3 col-lg-3 col-sm-12 fw-bold">
+                <label className="col-md-2 col-lg-2 col-sm-12 fw-bold">
                 LDL Cholesterol:
                 </label>
-                <p className="col-md-3 col-lg-3 col-sm-12">
+                <p className="col-md-4 col-lg-4 col-sm-12">
                   <div
                     onMouseEnter={() => {
                       this.sliderNode.setState({ active: true });
@@ -575,11 +575,11 @@ class Lab_test extends React.Component {
                 </p>               
               </div>
               <div className="row ">
-                <label className="col-md-3 col-lg-3 col-sm-12 fw-bold">
+                <label className="col-md-2 col-lg-2 col-sm-12 fw-bold">
                 Cholesterol/HDL ratio:
                 </label>
                 <br></br>
-                <p className="col-md-3 col-lg-3 col-sm-12">
+                <p className="col-md-4 col-lg-4 col-sm-12">
                   <div
                     onMouseEnter={() => {
                       this.sliderNode.setState({ active: true });
@@ -612,11 +612,11 @@ class Lab_test extends React.Component {
                 <h5 className="fw-bold text-success">  Blood Sugar Level</h5>
                 </div>
                 <div className="row ">
-                <label className="col-md-3 col-lg-3 col-sm-12 fw-bold">
+                <label className="col-md-2 col-lg-2 col-sm-12 fw-bold">
                 Fasting:
                 </label>
                 <br></br>
-                <p className="col-md-3 col-lg-3 col-sm-12">
+                <p className="col-md-4 col-lg-4 col-sm-12">
                   <div
                     onMouseEnter={() => {
                       this.sliderNode.setState({ active: true });
@@ -640,10 +640,10 @@ class Lab_test extends React.Component {
                     />
                   </div>
                 </p>
-                <label className="col-md-3 col-lg-3 col-sm-12 fw-bold">
+                <label className="col-md-2 col-lg-2 col-sm-12 fw-bold">
                 After Eating:
                 </label>
-                <p className="col-md-3 col-lg-3 col-sm-12">
+                <p className="col-md-4 col-lg-4 col-sm-12">
                   <div
                     onMouseEnter={() => {
                       this.sliderNode.setState({ active: true });
@@ -669,11 +669,11 @@ class Lab_test extends React.Component {
                 </p>               
               </div>
               <div className="row ">
-                <label className="col-md-3 col-lg-3 col-sm-12 fw-bold">
+                <label className="col-md-2 col-lg-2 col-sm-12 fw-bold">
                 After Meal(1-2hrs):
                 </label>
                 <br></br>
-                <p className="col-md-3 col-lg-3 col-sm-12">
+                <p className="col-md-4 col-lg-4 col-sm-12">
                   <div
                     onMouseEnter={() => {
                       this.sliderNode.setState({ active: true });
@@ -697,11 +697,11 @@ class Lab_test extends React.Component {
                     />
                   </div>
                 </p>
-                <label className="col-md-3 col-lg-3 col-sm-12 fw-bold">
+                <label className="col-md-2 col-lg-2 col-sm-12 fw-bold">
                A1c:
                 </label>
                 <br></br>
-                <p className="col-md-3 col-lg-3 col-sm-12">
+                <p className="col-md-4 col-lg-4 col-sm-12">
                   <div
                     onMouseEnter={() => {
                       this.sliderNode.setState({ active: true });
