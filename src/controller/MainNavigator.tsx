@@ -30,6 +30,9 @@ import MedicalRecord from "../view/screen/Documents/Medical_report";
 import Vitals from "../view/screen/medical_record/form/vitals";
 import Schedules from "../view/screen/schedules/schedules";
 import Lab_test from "../view/screen/lab test/lab_test";
+import Calenders from "../view/screen/calender-s/calender_s";
+import reportWebVitals from "../view/screen/calender-s/reportWebVitals";
+import ContextWrapper from "../view/context/ContextWrapper";
 function MainNavigator() {
   return (
     <div className="App">
@@ -64,6 +67,7 @@ function MainNavigator() {
         <Route path="/vitals" element={<Vitals/>}/>
         <Route path="/schedules" element={<Schedules/>}/>
         <Route path="/lab" element={<Lab_test/>}/>
+        <Route path="/c_s" element={<Calenders/>}/>
       </Routes>
     </div>
   );

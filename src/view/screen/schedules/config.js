@@ -13,6 +13,7 @@ window.config = {
     'react': 'npm:react@17.0.2/umd/react.development.js',
     'react-dom': 'npm:react-dom@17.0.2/umd/react-dom.development.js',
     'prop-types': 'npm:prop-types@15.8.1/prop-types.js',
+    'whatwg-fetch': 'npm:whatwg-fetch@2.0.4/fetch.js',
     'rrule': 'npm:rrule@2.6.4/dist/es5/rrule.js',
     'luxon': 'npm:luxon@1.28.0/build/global/luxon.min.js',
     'es6-object-assign': 'npm:es6-object-assign@1.1.0',
@@ -64,4 +65,3 @@ window.config = {
   },
 };
 System.config(window.config);
-​

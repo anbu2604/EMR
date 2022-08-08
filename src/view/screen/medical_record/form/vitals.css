@@ -35,6 +35,41 @@
 .rangeslider_oxygen{
   background: rgb(0, 255, 247);
 }
+.rangeslider_sbp{
+  background: rgb(90, 25, 154);
+
+}
+.rangeslider_dbp{
+  background: rgb(0, 155, 154);
+
+}
+.rangeslider_hba1c{
+  background: rgb(130, 15, 254);
+
+}
+.rangeslider_fs{
+  background: rgb(130, 110, 3);
+}
+.rangeslider_pps{
+  background: rgb(0, 255, 247);
+}
+.rangeslider_rbs{
+  background: rgb(160, 95, 157);
+}
+.rangeslider_tc{
+  background: rgb(10, 95, 157);
+}
+.rangeslider_ldl{
+  background: rgb(1, 195, 197);
+}
+
+.rangeslider_hdl{
+  background: rgb(90, 195, 197);
+}
+.rangeslider_tgl{
+  background: rgb(20, 255, 197);
+}
+
 /* .temperature  {
   background:linear-gradient(90deg, red 0%, yellow 32%, green 55%, yellow 78%, red 100%) ;
   align-content: stretch;

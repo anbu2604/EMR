@@ -60,11 +60,11 @@ export class login extends Component {
           </div>
   <div class="mb-4 ">
     <label for="exampleInputEmail1" class="form-label d-flex">Email or username</label>
-                       <input type="text" onChange={this.handleChange} value={this.state.username} name='username' id="signup_email" className="form-control form-control-lg" placeholder="username or email" />
+                       <input type="text" onChange={this.handleChange} value={this.state.username} name='username' id="signup_email" className="form-control form-control-lg input_line" placeholder="username or email" />
   </div>
   <div class="mb-5">
     <label for="exampleInputPassword1" class="form-label d-flex">Password</label>
-                    <input type="password" onChange={this.handleChange} value={this.state.password} name='password' id="signup_password" className="form-control form-control-lg" placeholder="password" />
+                    <input type="password" onChange={this.handleChange} value={this.state.password} name='password' id="signup_password" className="form-control form-control-lg input_line " placeholder="password" />
   </div>
   
   <div  class="button btn-primary col-lg-12 mb-4" onClick={this.handlesubmit}>Submit</div>

@@ -499,8 +499,8 @@ class Lab_test extends React.Component {
                     }}
                   >
  <Slider
-                       min={150}
-                       max={499}
+                       min={20}
+                       max={5000}
                         className={ 
                           card === 'triglycerides' 
                             ? 'rangeslider_triglycerides' 
@@ -558,8 +558,8 @@ class Lab_test extends React.Component {
                     }}
                   >
                     <Slider
-                       min={60}
-                       max={190}
+                       min={30}
+                       max={500}
                         className={ 
                           card === 'ldl' 
                             ? 'rangeslider_ldl' 
@@ -589,8 +589,8 @@ class Lab_test extends React.Component {
                     }}
                   >
                     <Slider
-                       min={4.0}
-                       max={6.0}
+                       min={20}
+                       max={80}
                         className={ 
                           card === 'hdl_ratio' 
                             ? 'rangeslider_hdl_ratio' 
@@ -626,8 +626,8 @@ class Lab_test extends React.Component {
                     }}
                   >
                     <Slider
-                       min={80}
-                       max={126}
+                       min={20}
+                       max={600}
                         className={ 
                           card === 'fasting' 
                             ? 'rangeslider_fasting' 
@@ -728,6 +728,7 @@ class Lab_test extends React.Component {
                   </div>
                 </p>
                 </div>
+                
             </div>
           </div>
         </div>

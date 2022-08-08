@@ -14,7 +14,7 @@ svg{
     position: relative; 
    display: inline-block;
 }
-.form-control{
+.input_line{
     border: 1px solid lightskyblue;
     border-radius: 10px;
     padding: 13px;

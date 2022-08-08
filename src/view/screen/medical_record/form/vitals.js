@@ -68,6 +68,66 @@ class Vitals extends React.Component {
       card: 'oxygen'
     })
   };
+  handleChangeSbp = (sbp) => {
+    this.setState({
+      sbp: sbp,
+      card: 'sbp'
+    })
+  };
+  handleChangeDbp = (dbp) => {
+    this.setState({
+      dbp: dbp,
+      card: 'dbp'
+    })
+  };
+  handleChangeHbA1c = (hba1c) => {
+    this.setState({
+      hba1c: hba1c,
+      card: 'hba1c'
+    })
+  };
+  handleChangeFs = (fs) => {
+    this.setState({
+      fs: fs,
+      card: 'fs'
+    })
+  };
+  handleChangePps = (pps) => {
+    this.setState({
+      pps: pps,
+      card: 'pps'
+    })
+  };
+  handleChangeRbs = (rbs) => {
+    this.setState({
+      rbs: rbs,
+      card: 'rbs'
+    })
+  };
+  handleChangeTc = (tc) => {
+    this.setState({
+      tc: tc,
+      card: 'tc'
+    })
+  };
+  handleChangeLdl = (ldl) => {
+    this.setState({
+      ldl: ldl,
+      card: 'ldl'
+    })
+  };
+  handleChangeHdl = (hdl) => {
+    this.setState({
+      hdl: hdl,
+      card: 'hdl'
+    })
+  };
+  handleChangeTgl = (tgl) => {
+    this.setState({
+      tgl: tgl,
+      card: 'tgl'
+    })
+  };
   handleChangeComplete = () => {
     console.log('Change event completed')
   };
@@ -78,12 +138,23 @@ class Vitals extends React.Component {
   render() {
     const { height } = this.state;
     const { weight } = this.state;
-    const formatkg = weight => weight + ' kg'
+    // const formatkg = weight => weight + ' kg'
     const { temperature } = this.state;
     const { bmi } = this.state;
     const { respiration } = this.state;
     const { pulse } = this.state;
-    const { oxygen } = this.state;
+    const { oxygen } = this.state ;
+    // const fotmat_percentage = oxygen => oxygen + '%'
+    const { sbp } = this.state;
+    const { dbp } = this.state;
+    const { hba1c } = this.state;
+    const { fs } = this.state;
+    const { pps } = this.state;
+    const { rbs } = this.state;
+    const { tc } = this.state;
+    const { ldl } = this.state;
+    const { hdl } = this.state;
+    const { tgl } = this.state;
     const { card } = this.state;
     console.log("card",card)
     return (
@@ -112,8 +183,8 @@ class Vitals extends React.Component {
                 >
                     <Slider
                         ref={(n) => (this.sliderNode = n)}
-                        min={1}
-                        max={150}
+                        min={25}
+                        max={250}
                         className={ 
                           card === 'weight' 
                             ? 'rangeslider_weight' 
@@ -121,7 +192,8 @@ class Vitals extends React.Component {
                         }
                         style={{ backgroundColor:'blue'}}
                         value={weight}
-                        format={formatkg}
+                        step={0.1}
+                        // format={formatkg}
                         onChangeStart={this.handleChangeStart}
                         onChange={this.handleChangeWeight}
                         onChangeComplete={this.handleChangeComplete}
@@ -133,7 +205,7 @@ class Vitals extends React.Component {
                 </label>
                 <p className="col-md-4 col-lg-4 col-sm-12">
                     <Slider
-                        min={140}
+                        min={100}
                         max={200}
                         className={ 
                           card === 'height' 
@@ -142,7 +214,7 @@ class Vitals extends React.Component {
                         }
                         style={{ backgroundColor:'blue'}}
                         value={height}
-                        step={0.5}
+                        step={0.1}
                         onChangeStart={this.handleChangeStart}
                         onChange={this.handleChangeHeight}
                         onChangeComplete={this.handleChangeComplete}
@@ -158,7 +230,7 @@ class Vitals extends React.Component {
                     <Slider
                        min={96.0}
                        max={103}
-                       step={0.5}
+                       step={0.01}
                         className={ 
                           card === 'temp' 
                             ? 'rangeslider_temp' 
@@ -220,12 +292,12 @@ class Vitals extends React.Component {
                 <br></br>
                 <p className="col-md-4 col-lg-4 col-sm-12">
                     <Slider
-                       min={1}
-                       max={35}
+                       min={6}
+                       max={40}
                         className={ 
                           card === 'respiration' 
                             ? 'rangeslider_respiration' 
-                            : 'rangeslider'
+                            : 'rangeslider_respiration'
                         }
                         value={respiration}
                         onChangeStart={this.handleChangeStart}
@@ -253,8 +325,8 @@ class Vitals extends React.Component {
                 <p className="col-md-4 col-lg-4 col-sm-12">
                   {" "}
                     <Slider
-                       min={35}
-                       max={140}
+                       min={20}
+                       max={200}
                         className={ 
                           card === 'pulse' 
                             ? 'rangeslider_pulse' 
@@ -274,14 +346,15 @@ class Vitals extends React.Component {
                 <p className="col-md-4 col-lg-4 col-sm-12">
                   {" "}
                     <Slider
-                      min={80}
-                      max={130}
+                      min={40}
+                      max={100}
                         className={ 
                           card === 'oxygen' 
                             ? 'rangeslider_oxygen' 
-                            : 'rangeslider'
+                            : 'rangeslider_oxygen'
                         }
                         value={oxygen}
+                        // format ={fotmat_percentage}
                         onChangeStart={this.handleChangeStart}
                         onChange={this.handleChangeOxygen}
                         onChangeComplete={this.handleChangeComplete}
@@ -289,6 +362,228 @@ class Vitals extends React.Component {
                     
                 </p>
               </div>
+              <div className="row">
+                <label className="col-md-2 col-lg-2 col-sm-12 fw-bold">
+                  SBP:
+                </label>
+                <br></br>
+                <p className="col-md-4 col-lg-4 col-sm-12">
+                  {" "}
+                    <Slider
+                       min={60}
+                       max={200}
+                        className={ 
+                          card === 'pulse' 
+                            ? 'rangeslider_sbp' 
+                            : 'rangeslider_sbp'
+                        }
+                        value={sbp}
+                        onChangeStart={this.handleChangeStart}
+                        onChange={this.handleChangeSbp}
+                        onChangeComplete={this.handleChangeComplete}
+                    />
+                    
+                </p>
+                <label className="col-md-2 col-lg-2 col-sm-12 fw-bold">
+                  DBP:{" "}
+                </label>
+                <br></br>
+                <p className="col-md-4 col-lg-4 col-sm-12">
+                  {" "}
+                    <Slider
+                      min={0}
+                      max={160}
+                        className={ 
+                          card === 'dbp' 
+                            ? 'rangeslider_dbp' 
+                            : 'rangeslider_dbp'
+                        }
+                        value={dbp}
+                        onChangeStart={this.handleChangeStart}
+                        onChange={this.handleChangeDbp}
+                        onChangeComplete={this.handleChangeComplete}
+                    />
+                    
+                </p>
+              </div>
+              <div className="row">
+                <label className="col-md-2 col-lg-2 col-sm-12 fw-bold">
+                  HbA1c:
+                </label>
+                <br></br>
+                <p className="col-md-4 col-lg-4 col-sm-12">
+                  {" "}
+                    <Slider
+                       min={3}
+                       max={25}
+                        className={ 
+                          card === 'hba1c' 
+                            ? 'rangeslider_hba1c' 
+                            : 'rangeslider_hba1c'
+                        }
+                        value={hba1c}
+                        // format ={fotmat_percentage}
+                        onChangeStart={this.handleChangeStart}
+                        onChange={this.handleChangeHbA1c}
+                        onChangeComplete={this.handleChangeComplete}
+                    />
+                    
+                </p>
+                <label className="col-md-2 col-lg-2 col-sm-12 fw-bold">
+                  FS:{" "}
+                </label>
+                <br></br>
+                <p className="col-md-4 col-lg-4 col-sm-12">
+                  {" "}
+                    <Slider
+                      min={20}
+                      max={600}
+                        className={ 
+                          card === 'fs' 
+                            ? 'rangeslider_fs' 
+                            : 'rangeslider_fs'
+                        }
+                        value={fs}
+                        onChangeStart={this.handleChangeStart}
+                        onChange={this.handleChangeFs}
+                        onChangeComplete={this.handleChangeComplete}
+                    />
+                    
+                </p>
+              </div>
+              <div className="row">
+                <label className="col-md-2 col-lg-2 col-sm-12 fw-bold">
+                  PPS:
+                </label>
+                <br></br>
+                <p className="col-md-4 col-lg-4 col-sm-12">
+                  {" "}
+                    <Slider
+                       min={20}
+                       max={600}
+                        className={ 
+                          card === 'pps' 
+                            ? 'rangeslider_pps' 
+                            : 'rangeslider_pps'
+                        }
+                        value={pps}
+                        onChangeStart={this.handleChangeStart}
+                        onChange={this.handleChangePps}
+                        onChangeComplete={this.handleChangeComplete}
+                    />
+                    
+                </p>
+                <label className="col-md-2 col-lg-2 col-sm-12 fw-bold">
+                  RBS:{" "}
+                </label>
+                <br></br>
+                <p className="col-md-4 col-lg-4 col-sm-12">
+                  {" "}
+                    <Slider
+                      min={20}
+                      max={600}
+                        className={ 
+                          card === 'rbs' 
+                            ? 'rangeslider_rbs' 
+                            : 'rangeslider_rbs'
+                        }
+                        value={rbs}
+                        onChangeStart={this.handleChangeStart}
+                        onChange={this.handleChangeRbs}
+                        onChangeComplete={this.handleChangeComplete}
+                    />
+                    
+                </p>
+              </div>
+              <div className="row">
+                <label className="col-md-2 col-lg-2 col-sm-12 fw-bold">
+                  TC:
+                </label>
+                <br></br>
+                <p className="col-md-4 col-lg-4 col-sm-12">
+                  {" "}
+                    <Slider
+                       min={50}
+                       max={1000}
+                        className={ 
+                          card === 'tc' 
+                            ? 'rangeslider_tc' 
+                            : 'rangeslider_tc'
+                        }
+                        value={tc}
+                        onChangeStart={this.handleChangeStart}
+                        onChange={this.handleChangeTc}
+                        onChangeComplete={this.handleChangeComplete}
+                    />
+                    
+                </p>
+                <label className="col-md-2 col-lg-2 col-sm-12 fw-bold">
+                  LDL:{" "}
+                </label>
+                <br></br>
+                <p className="col-md-4 col-lg-4 col-sm-12">
+                  {" "}
+                    <Slider
+                      min={30}
+                      max={500}
+                        className={ 
+                          card === 'ldl' 
+                            ? 'rangeslider_ldl' 
+                            : 'rangeslider_ldl'
+                        }
+                        value={ldl}
+                        onChangeStart={this.handleChangeStart}
+                        onChange={this.handleChangeLdl}
+                        onChangeComplete={this.handleChangeComplete}
+                    />
+                    
+                </p>
+              </div>
+              <div className="row">
+                <label className="col-md-2 col-lg-2 col-sm-12 fw-bold">
+                  HDL:
+                </label>
+                <br></br>
+                <p className="col-md-4 col-lg-4 col-sm-12">
+                  {" "}
+                    <Slider
+                       min={20}
+                       max={80}
+                        className={ 
+                          card === 'hdl' 
+                            ? 'rangeslider_hdl' 
+                            : 'rangeslider_hdl'
+                        }
+                        value={hdl}
+                        onChangeStart={this.handleChangeStart}
+                        onChange={this.handleChangeHdl}
+                        onChangeComplete={this.handleChangeComplete}
+                    />
+                    
+                </p>
+                <label className="col-md-2 col-lg-2 col-sm-12 fw-bold">
+                  TGL:{" "}
+                </label>
+                <br></br>
+                <p className="col-md-4 col-lg-4 col-sm-12">
+                  {" "}
+                    <Slider
+                      min={20}
+                      max={5000}
+                        className={ 
+                          card === 'tgl' 
+                            ? 'rangeslider_tgl' 
+                            : 'rangeslider_tgl'
+                        }
+                        value={tgl}
+                        onChangeStart={this.handleChangeStart}
+                        onChange={this.handleChangeTgl}
+                        onChangeComplete={this.handleChangeComplete}
+                    />
+                    
+                </p>
+              </div>
+
               <center>
               <button className=" btn btn-primary col-lg-1">Save</button>
               </center>
